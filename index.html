@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#000000">
 <title>N — Focus companion</title>
 <link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,16 +16,13 @@
 :root{--ink:#182033;--muted:#7d8494;--line:#edf0f5;--bg:#f6f7fb;--purple:#6857e8;--mint:#dff8ed;--coral:#ff8d79;--blue:#e8edff;--shadow:0 18px 50px #24315a18}*{box-sizing:border-box}body{margin:0;background:linear-gradient(125deg,#e9e9ff,#fbf4ee 50%,#e8f5f0);font-family:'DM Sans',sans-serif;color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:22px}.phone{width:min(100%,393px);height:min(852px,calc(100vh - 44px));min-height:700px;background:var(--bg);border:8px solid #20242e;border-radius:44px;overflow:hidden;box-shadow:var(--shadow);position:relative;display:flex;flex-direction:column}.status{height:35px;padding:9px 25px 0;font-size:12px;font-weight:700;display:flex;justify-content:space-between;background:var(--bg)}.app{overflow:auto;flex:1;padding:16px 20px 100px;scrollbar-width:none}.app::-webkit-scrollbar{display:none}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.brand{font-family:Manrope;font-weight:800;font-size:20px;letter-spacing:-.7px}.brand span{color:var(--purple)}.avatar{width:37px;height:37px;border-radius:50%;background:#ede9ff;color:var(--purple);display:grid;place-items:center;font-weight:800}.date{font-size:13px;color:var(--muted);font-weight:600}.headline{font-family:Manrope;font-size:27px;line-height:1.15;letter-spacing:-1px;margin:5px 0 16px}.headline em{font-style:normal;color:var(--purple)}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:13px;box-shadow:0 3px 12px #1d285008}.row{display:flex;align-items:center;justify-content:space-between}.label{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:700}.big{font-family:Manrope;font-size:22px;font-weight:800;letter-spacing:-.5px;margin-top:5px}.small{font-size:12px;color:var(--muted)}.score{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--purple) 0 74%,#eeeefa 74%);position:relative;color:var(--ink);font-weight:800}.score:before{content:'';position:absolute;inset:6px;border-radius:50%;background:white}.score b{position:relative}.chips{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}.chip{font-size:11px;border-radius:20px;padding:7px 10px;font-weight:700;background:#f2f3f8;color:#667085}.chip.good{background:var(--mint);color:#257450}.chip.warn{background:#fff0e8;color:#b85d3f}.section{font-family:Manrope;font-weight:800;font-size:16px;letter-spacing:-.3px;margin:20px 1px 10px}.assistant{background:linear-gradient(135deg,#6d5be9,#8b79f5);color:white;border:0;padding:18px;position:relative;overflow:hidden}.assistant:after{content:'✦';position:absolute;font-size:90px;right:10px;top:-10px;color:#ffffff20}.assistant .label{color:#e6e1ff}.assistant h2{font:800 19px Manrope;letter-spacing:-.5px;margin:7px 0}.assistant p{color:#e9e6ff;font-size:12px;line-height:1.5;margin:0 0 14px;max-width:245px}.button{border:0;background:white;color:var(--purple);border-radius:13px;padding:11px 14px;font:700 12px 'DM Sans';cursor:pointer}.button.dark{background:#202540;color:white}.button.ghost{border:1px solid var(--line);background:#fff;color:#434b5d}.activity{display:flex;align-items:center;gap:11px;padding:11px 0;border-top:1px solid var(--line)}.icon{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;font-size:16px;background:#f0efff}.activity:nth-of-type(2) .icon{background:#fff1e9}.activity:nth-of-type(3) .icon{background:#e6f8f1}.activity .title{font-size:13px;font-weight:700}.activity .sub{font-size:11px;color:var(--muted);margin-top:3px}.amount{margin-left:auto;font-weight:800;font-size:13px}.bar{height:8px;background:#f0f1f6;border-radius:6px;overflow:hidden;margin:10px 0 6px}.bar i{height:100%;display:block;background:var(--purple);border-radius:6px}.insight{background:#fff5ed;border:1px solid #ffe5d4}.insight .tip{font-size:12px;line-height:1.5;color:#76513f;margin-top:7px}.tabs{position:absolute;bottom:0;left:0;right:0;background:#fffffff2;backdrop-filter:blur(14px);border-top:1px solid var(--line);height:78px;display:flex;justify-content:space-around;padding:10px 7px 15px}.tab{border:0;background:none;color:#969cab;font:600 10px 'DM Sans';display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;min-width:58px}.tab span{font-size:19px}.tab.active{color:var(--purple)}.screen{display:none}.screen.active{display:block}.loghero{background:#edeaff;border:0}.logitem{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.time{font-size:11px;color:var(--muted);width:52px;padding-top:2px}.timeline{border-left:2px solid #e9e7fb;padding-left:12px;flex:1}.timeline strong{font-size:13px}.timeline small{display:block;color:var(--muted);margin-top:4px}.money{font-size:25px;font-family:Manrope;font-weight:800}.pill{font-size:10px;font-weight:800;border-radius:30px;padding:5px 8px;background:#fff0e8;color:#b85d3f}.center{text-align:center;padding:24px 10px}.center h2{font:800 21px Manrope}.prompt{width:100%;border:1px solid var(--line);border-radius:15px;padding:13px;font:13px 'DM Sans';resize:none;margin:12px 0;background:white}.planrow{display:flex;gap:10px;margin:14px 0}.planrow .icon{flex:none}.planrow div:last-child{font-size:12px;color:var(--muted)}.planrow b{display:block;color:var(--ink);font-size:13px;margin-bottom:3px}.modal{position:absolute;inset:0;background:#171b2c70;display:none;align-items:flex-end;z-index:5}.modal.show{display:flex}.sheet{background:white;border-radius:28px 28px 0 0;padding:22px;width:100%;max-height:83%;overflow:auto}.sheet h2{font:800 20px Manrope;margin:4px 0}.sheet p{color:var(--muted);font-size:13px;line-height:1.5}.close{float:right;border:0;border-radius:50%;width:30px;height:30px;background:#f2f3f7;font-size:17px;cursor:pointer}.input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;margin:6px 0 12px;font:14px 'DM Sans'}.toast{position:absolute;bottom:86px;left:50%;transform:translateX(-50%);background:#202540;color:white;padding:10px 15px;border-radius:30px;font-size:12px;opacity:0;transition:.25s;pointer-events:none;white-space:nowrap}.toast.show{opacity:1}
 </style>
 <style>
-:root{--ink:#f5f5f5;--muted:#929292;--line:#272727;--bg:#000000;--purple:#d1fb45;--mint:#202020;--coral:#ff987b;--blue:#191919;--shadow:0 22px 60px #0009}
-body{background:#000}.phone{background:#000;border-color:#080808}.status,.app{background:#000;color:var(--ink)}.brand span{color:#d1fb45}.avatar{background:#202020;color:#d1fb45}.card{background:#111;border-color:#292929;box-shadow:none}.score{background:conic-gradient(#d1fb45 0 74%,#353b32 74%);color:#f1f3f0}.score:before{background:#111}.chip{background:#282e28;color:#b6beb7}.chip.good{background:#263721;color:#c9f274}.chip.warn{background:#3c2b23;color:#ffad8f}.assistant{background:linear-gradient(135deg,#d1fb45,#b7e927);color:#141811}.assistant .label{color:#39451f}.assistant p{color:#354027}.assistant:after{color:#18220c18}.button{color:#18200d}.button.dark{background:#d1fb45;color:#15190f}.button.ghost{background:#111;color:#e6e9e5;border-color:#353535}.icon{background:#202020}.activity:nth-of-type(2) .icon{background:#3a2920}.activity:nth-of-type(3) .icon{background:#20352a}.insight{background:#27261c;border-color:#46402a}.insight .tip{color:#d3d0b8}.tabs{background:#080808f2;border-color:#292929}.tab{color:#929a91}.tab.active{color:#d1fb45}.loghero{background:#272e20}.timeline{border-color:#3b4630}.bar{background:#292929}.bar i{background:#d1fb45!important}.sheet{background:#111;color:#f5f5f5}.input,.prompt{background:#050505;color:#f5f5f5;border-color:#343434}.input::placeholder,.prompt::placeholder{color:#858d84}.close{background:#292929;color:white}.toast{background:#d1fb45;color:#15190f}.voicebutton{width:68px;height:68px;border:0;border-radius:50%;background:#d1fb45;color:#15190f;font-size:27px;cursor:pointer;box-shadow:0 0 0 9px #d1fb4523;margin:14px auto}.voicebutton.listening{animation:pulse 1.1s infinite;background:#ff987b}@keyframes pulse{50%{box-shadow:0 0 0 17px #ff987b20}}
-</style>
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Space+Grotesk:wght@400;500;600&display=swap');
 :root{--ink:#fff;--muted:#999;--line:#292929;--bg:#000;--purple:#fff;--mint:#1a1a1a;--coral:#ff6633;--blue:#1a1a1a;--shadow:none}
-*{box-sizing:border-box}body{background:#000;color:#fff;font-family:'Space Grotesk',sans-serif;letter-spacing:.01em}.phone{background:#000;border:1px solid #292929}.status,.app{background:#000;color:#fff}.status{font-family:'Michroma',sans-serif;font-size:9px;letter-spacing:.12em}.app{padding:18px 20px 104px}.brand{font-family:'Michroma',sans-serif;font-weight:400;font-size:16px;letter-spacing:.15em}.brand span{color:#fff}.brand small{font-family:'Michroma',sans-serif!important;color:#666!important;font-size:7px!important;letter-spacing:.12em}.avatar{background:#121212;color:#fff;border:1px solid #383838;font-family:'Michroma',sans-serif;font-weight:400}.date,.label{font-family:'Michroma',sans-serif;font-weight:400;color:#999;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.headline{font-family:'Michroma',sans-serif;font-weight:400;font-size:22px;letter-spacing:.015em;line-height:1.5;margin:9px 0 22px}.headline em{color:#fff;font-style:normal}.section{font-family:'Michroma',sans-serif;font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;margin:26px 1px 13px}.card{background:#1a1a1a;border:1px solid #292929;border-radius:27px;padding:20px;margin-bottom:14px;box-shadow:none}.big,.money{font-family:'Michroma',sans-serif;font-weight:400;letter-spacing:.02em;color:#fff;font-size:21px}.small,.sub{font-family:'Space Grotesk',sans-serif;color:#999;font-size:12px;line-height:1.5}.score{background:conic-gradient(#fff 0 74%,#383838 74%);color:#fff;width:60px;height:60px;font-family:'Michroma',sans-serif;font-size:12px}.score:before{background:#1a1a1a;inset:5px}.chip{font-family:'Michroma',sans-serif;font-size:8px;letter-spacing:.06em;background:#121212;color:#999;border:1px solid #383838;padding:7px 9px}.chip.good,.chip.warn{background:#121212;color:#ccc}.assistant{background:#121212;border:1px solid #383838;color:#fff}.assistant .label{color:#999}.assistant h2{font-family:'Michroma',sans-serif;font-weight:400;font-size:15px;line-height:1.7;letter-spacing:.02em}.assistant p{font-family:'Space Grotesk',sans-serif;color:#999;font-size:12px;line-height:1.65;max-width:255px}.assistant:after{display:none}.button{font-family:'Michroma',sans-serif;font-weight:400;font-size:9px;letter-spacing:.08em;text-transform:uppercase;background:#fff;color:#000;border:1px solid #fff;border-radius:999px;padding:12px 17px;transition:transform .18s ease,opacity .18s ease;cursor:pointer}.button:active{transform:scale(.97);opacity:.85}.button.dark{background:#fff;color:#000;border-color:#fff}.button.ghost{background:transparent;color:#fff;border-color:#383838}.icon{background:#121212;border:1px solid #292929;border-radius:13px;filter:grayscale(1)}.activity:nth-of-type(2) .icon,.activity:nth-of-type(3) .icon{background:#121212}.activity .title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;color:#fff}.amount{font-family:'Michroma',sans-serif;font-size:10px;font-weight:400;color:#fff}.activity{border-color:#292929}.insight{background:#121212;border-color:#383838}.insight .tip{color:#aaa;line-height:1.65}.pill{font-family:'Michroma',sans-serif;background:transparent;color:#999;border:1px solid #383838;font-size:8px;letter-spacing:.08em}.bar{height:4px;background:#292929;border-radius:5px}.bar i{background:#fff!important;border-radius:5px}.tabs{height:84px;position:absolute;bottom:0;left:0;right:0;padding:12px 8px calc(13px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #292929;backdrop-filter:none}.tab{font-family:'Michroma',sans-serif;font-size:7px;letter-spacing:.06em;color:#666;gap:5px}.tab span{font-family:'Space Grotesk',sans-serif;font-size:17px;filter:grayscale(1)}.tab.active{color:#fff}.screen{animation:screenIn .25s ease both}.screen:not(.active){display:none}.sheet{background:#121212;border-top:1px solid #383838;border-radius:30px 30px 0 0;color:#fff;padding:24px 22px calc(24px + env(safe-area-inset-bottom))}.sheet h2{font-family:'Michroma',sans-serif;font-size:15px;font-weight:400;letter-spacing:.02em;line-height:1.7}.sheet p{font-family:'Space Grotesk',sans-serif;color:#999;line-height:1.6}.input,.prompt{background:#000;color:#fff;border:1px solid #383838;border-radius:14px;font-family:'Space Grotesk',sans-serif}.input:focus,.prompt:focus{outline:1px solid #999}.input::placeholder,.prompt::placeholder{color:#666}.close{background:#1a1a1a;color:#fff;border:1px solid #383838}.planrow .icon{filter:grayscale(1)}.planrow b{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff}.planrow div:last-child{font-family:'Space Grotesk',sans-serif;color:#999;line-height:1.5}.loghero{background:#121212}.logitem{border-color:#292929}.time{font-family:'Michroma',sans-serif;font-size:8px;color:#666;letter-spacing:.05em}.timeline{border-color:#383838}.timeline strong{font-family:'Space Grotesk',sans-serif;font-weight:500}.voicebutton{width:68px;height:68px;background:#fff;color:#000;border:0;border-radius:50%;box-shadow:none;font-size:23px;filter:grayscale(1);display:grid;place-items:center}.voicebutton.listening{animation:pulse 1.4s infinite;background:#ff6633;color:#000}@keyframes pulse{50%{opacity:.65;transform:scale(.97)}}.toast{background:#fff;color:#000;font-family:'Michroma',sans-serif;font-size:8px;letter-spacing:.06em;text-transform:uppercase}.modal{background:#000b}.score b{font-family:'Michroma',sans-serif;font-weight:400}.row{gap:8px}.activity .sub{font-size:11px}.app::-webkit-scrollbar{display:none}@keyframes screenIn{from{opacity:.6;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+*{box-sizing:border-box}body{background:#000;color:#fff;font-family:'Space Grotesk',sans-serif;letter-spacing:.01em}.phone{background:#000;border:1px solid #292929}.status,.app{background:#000;color:#fff}.status{font-family:'Michroma',sans-serif;font-size:9px;letter-spacing:.12em}.app{padding:18px 20px 104px}.brand{font-family:'Michroma',sans-serif;font-weight:400;font-size:16px;letter-spacing:.15em}.brand span{color:#fff}.brand small{font-family:'Michroma',sans-serif!important;color:#666!important;font-size:7px!important;letter-spacing:.12em}.avatar{background:#121212;color:#fff;border:1px solid #383838;font-family:'Michroma',sans-serif;font-weight:400}.date,.label{font-family:'Michroma',sans-serif;font-weight:400;color:#999;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.headline{font-family:'Michroma',sans-serif;font-weight:400;font-size:22px;letter-spacing:.015em;line-height:1.5;margin:9px 0 22px}.headline em{color:#fff;font-style:normal}.section{font-family:'Michroma',sans-serif;font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;margin:26px 1px 13px}.card{background:#1a1a1a;border:1px solid #292929;border-radius:27px;padding:20px;margin-bottom:14px;box-shadow:none}.big,.money{font-family:'Michroma',sans-serif;font-weight:400;letter-spacing:.02em;color:#fff;font-size:21px}.small,.sub{font-family:'Space Grotesk',sans-serif;color:#999;font-size:12px;line-height:1.5}.score{background:conic-gradient(#fff 0 100%,#383838 100%);color:#fff;width:60px;height:60px;font-family:'Michroma',sans-serif;font-size:12px}.score:before{background:#1a1a1a;inset:5px}.chip{font-family:'Michroma',sans-serif;font-size:8px;letter-spacing:.06em;background:#121212;color:#999;border:1px solid #383838;padding:7px 9px}.chip.good,.chip.warn{background:#121212;color:#ccc}.assistant{background:#121212;border:1px solid #383838;color:#fff}.assistant .label{color:#999}.assistant h2{font-family:'Michroma',sans-serif;font-weight:400;font-size:15px;line-height:1.7;letter-spacing:.02em}.assistant p{font-family:'Space Grotesk',sans-serif;color:#999;font-size:12px;line-height:1.65;max-width:255px}.assistant:after{display:none}.button{font-family:'Michroma',sans-serif;font-weight:400;font-size:9px;letter-spacing:.08em;text-transform:uppercase;background:#fff;color:#000;border:1px solid #fff;border-radius:999px;padding:12px 17px;transition:transform .18s ease,opacity .18s ease;cursor:pointer}.button:active{transform:scale(.97);opacity:.85}.button.dark{background:#fff;color:#000;border-color:#fff}.button.ghost{background:transparent;color:#fff;border-color:#383838}.icon{background:#121212;border:1px solid #292929;border-radius:13px;filter:grayscale(1)}.activity:nth-of-type(2) .icon,.activity:nth-of-type(3) .icon{background:#121212}.activity .title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;color:#fff}.amount{font-family:'Michroma',sans-serif;font-size:10px;font-weight:400;color:#fff}.activity{border-color:#292929}.insight{background:#121212;border-color:#383838}.insight .tip{color:#aaa;line-height:1.65}.pill{font-family:'Michroma',sans-serif;background:transparent;color:#999;border:1px solid #383838;font-size:8px;letter-spacing:.08em}.bar{height:4px;background:#292929;border-radius:5px}.bar i{background:#fff!important;border-radius:5px}.tabs{height:84px;position:absolute;bottom:0;left:0;right:0;padding:12px 8px calc(13px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #292929;backdrop-filter:none}.tab{font-family:'Michroma',sans-serif;font-size:7px;letter-spacing:.06em;color:#666;gap:5px}.tab span{font-family:'Space Grotesk',sans-serif;font-size:17px;filter:grayscale(1)}.tab.active{color:#fff}.screen{animation:screenIn .25s ease both}.screen:not(.active){display:none}.sheet{background:#121212;border-top:1px solid #383838;border-radius:30px 30px 0 0;color:#fff;padding:24px 22px calc(24px + env(safe-area-inset-bottom))}.sheet h2{font-family:'Michroma',sans-serif;font-size:15px;font-weight:400;letter-spacing:.02em;line-height:1.7}.sheet p{font-family:'Space Grotesk',sans-serif;color:#999;line-height:1.6}.input,.prompt{background:#000;color:#fff;border:1px solid #383838;border-radius:14px;font-family:'Space Grotesk',sans-serif}.input:focus,.prompt:focus{outline:1px solid #999}.input::placeholder,.prompt::placeholder{color:#666}.close{background:#1a1a1a;color:#fff;border:1px solid #383838}.planrow .icon{filter:grayscale(1)}.planrow b{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff}.planrow div:last-child{font-family:'Space Grotesk',sans-serif;color:#999;line-height:1.5}.loghero{background:#121212}.logitem{border-color:#292929}.time{font-family:'Michroma',sans-serif;font-size:8px;color:#666;letter-spacing:.05em}.timeline{border-color:#383838}.timeline strong{font-family:'Space Grotesk',sans-serif;font-weight:500}.voicebutton{width:68px;height:68px;background:#fff;color:#000;border:0;border-radius:50%;box-shadow:none;font-size:23px;filter:grayscale(1);display:grid;place-items:center}.voicebutton.listening{animation:pulse 1.4s infinite;background:#ff6633;color:#000}@keyframes pulse{50%{opacity:.65;transform:scale(.97)}}.toast{background:#fff;color:#000;font-family:'Michroma',sans-serif;font-size:8px;letter-spacing:.06em;text-transform:uppercase}.modal{background:#000b}.score b{font-family:'Michroma',sans-serif;font-weight:400}.row{gap:8px}.activity .sub{font-size:11px}.app::-webkit-scrollbar{display:none}@keyframes screenIn{from{opacity:.6;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .voice-indicator{font-family:'Michroma',sans-serif;font-size:8px;letter-spacing:.08em;color:#fff;margin-top:8px;text-align:center;min-height:16px}
-.ai-bubble{background:#181818;border:1px solid #333;border-radius:18px;padding:14px 16px;margin:12px 0;font-size:13px;line-height:1.6;color:#eee;animation:screenIn .2s ease both}
-.ai-bubble strong{color:#fff;font-family:'Michroma',sans-serif;font-size:9px;letter-spacing:.08em;display:block;margin-bottom:4px}
+.empty-state{text-align:center;padding:26px 16px;background:#121212;border:1px dashed #292929;border-radius:20px;margin-bottom:14px}
+.budget-pill{flex:1;text-align:center;padding:9px 4px;font-size:9px;cursor:pointer;transition:all .15s;border-radius:999px;border:1px solid #383838;background:#121212;color:#999;font-family:'Michroma',sans-serif}
+.budget-pill.active{background:#fff!important;color:#000!important;border-color:#fff!important}
 
 /* =========================================================================
    RESPONSIVE EDGE-TO-EDGE FOR REAL IPHONE & MOBILE SCREENS
@@ -88,63 +86,92 @@ body{background:#000}.phone{background:#000;border-color:#080808}.status,.app{ba
 </style>
 </head>
 <body><main class="phone"><div class="status"><span>9:41</span><span>●●●  ▰</span></div><div class="app">
-<div class="top"><div class="brand">N<span>°</span><small style="font:600 10px 'DM Sans';color:#9ba399;margin-left:7px;letter-spacing:.5px">· FOCUS COMPANION</small></div><div class="avatar" id="appAvatar" title="Voice enabled">N</div></div>
+<div class="top">
+  <div class="brand" style="display:flex;align-items:center;gap:10px;cursor:pointer" onclick="show('home')">
+    <img src="logo.png" alt="N" style="width:28px;height:28px;border-radius:8px;object-fit:cover;border:1px solid #333;box-shadow:0 2px 8px rgba(255,255,255,0.06)">
+    <div>N<span>°</span><small style="font:600 10px 'DM Sans';color:#9ba399;margin-left:7px;letter-spacing:.5px">· FOCUS COMPANION</small></div>
+  </div>
+  <div class="avatar" id="appAvatar" title="Day Rhythm & Settings" onclick="openDaySetupModal(false)" style="padding:0;overflow:hidden;cursor:pointer;border-radius:10px;width:34px;height:34px;border:1px solid #383838">
+    <img src="logo.png" alt="N Profile" style="width:100%;height:100%;object-fit:cover">
+  </div>
+</div>
 
 <!-- HOME SCREEN -->
 <section class="screen active" id="home">
 <div class="date" id="homeDate">TODAY</div>
 <div class="headline">Make today<br><em>count.</em></div>
 
-<div class="card"><div class="row"><div><div class="label">Today's focus</div><div class="big" id="homeFocusBig">4h 20m</div><div class="small" id="homeFocusSessions">Across 6 logged sessions</div></div><div class="score" id="homeScoreCircle"><b id="homeScoreVal">74</b></div></div><div class="chips"><span class="chip good">↑ 12% vs yesterday</span><span class="chip" id="homePlanMatch">Plan match · 74%</span></div></div>
+<div class="card"><div class="row"><div><div class="label">Today's focus</div><div class="big" id="homeFocusBig">0m</div><div class="small" id="homeFocusSessions">Clean slate · 0 sessions</div></div><div class="score" id="homeScoreCircle"><b id="homeScoreVal">100</b></div></div><div class="chips"><span class="chip good" id="homeStatusChip">✦ Day Ready</span><span class="chip" id="homePlanMatch">Plan match · 100%</span></div></div>
 
-<div class="card assistant"><div class="label">MEET N · YOUR VOICE ASSISTANT</div><h2>Say it. N will log it.</h2><p>Tell N what you spent, what you’re doing, or what you want to fit into your day.</p><button class="button" onclick="openN()">● &nbsp;Talk to N</button></div>
+<div class="card assistant" style="display:flex;gap:14px;align-items:flex-start">
+  <div style="flex:1">
+    <div class="label">MEET N · YOUR VOICE COMPANION</div>
+    <h2>Say it. N will log it.</h2>
+    <p>Tell N what you spent, what you’re doing, or what you want to fit into your day.</p>
+    <button class="button" onclick="openN()">● &nbsp;Talk to N</button>
+  </div>
+  <div style="width:54px;height:54px;border-radius:14px;overflow:hidden;border:1px solid #383838;flex-shrink:0;margin-top:2px">
+    <img src="logo.png" alt="N" style="width:100%;height:100%;object-fit:cover">
+  </div>
+</div>
 
-<div class="row"><div class="section">Time so far</div><button class="button ghost" onclick="show('log')">View log</button></div>
+<div class="row"><div class="section">Time so far</div><div style="display:flex;gap:6px"><button class="button ghost" style="padding:6px 12px;font-size:8px" onclick="openLog()">＋ Add</button><button class="button ghost" style="padding:6px 12px;font-size:8px" onclick="show('log')">Log</button></div></div>
 <div class="card" id="homeActivityList"></div>
 
 <div class="section">Spending today</div>
-<div class="card"><div class="row"><div><div class="label">Total logged</div><div class="big" id="homeSpentBig">₹ 680</div></div><div class="chip warn" id="homeWantsChip">₹220 wants</div></div><div class="bar"><i id="homeSpentBar" style="width:38%;background:#ff9b78"></i></div><div class="small" id="homeSpentGuide">38% of your ₹1,800 daily guide</div></div>
+<div class="card"><div class="row"><div><div class="label">Total logged</div><div class="big" id="homeSpentBig">₹ 0</div></div><div class="chip warn" id="homeWantsChip">₹0 wants</div></div><div class="bar"><i id="homeSpentBar" style="width:0%;background:#ff9b78"></i></div><div class="small" id="homeSpentGuide">0% of your ₹1,000 daily guide</div></div>
 
-<div class="card insight"><div class="row"><strong style="font-size:13px">💡 A pattern to notice</strong><span class="pill">TIME</span></div><div class="tip">You logged 48 minutes of social media after lunch this week. Want to protect that time for your study goal tomorrow?</div></div>
+<div class="card insight"><div class="row"><strong style="font-size:13px">💡 Daily Rhythm</strong><span class="pill">N</span></div><div class="tip" id="homeRhythmInsight">Start your day with intention. Tell N your commitments and log sessions as you move through your day.</div></div>
 </section>
 
 <!-- TIME LOG SCREEN -->
 <section class="screen" id="log">
 <div class="date">YOUR ACTIVITY</div><div class="headline">Time <em>log</em></div>
-<div class="card loghero"><div class="row"><div><div class="label">Focus today</div><div class="big" id="logFocusBig">4h 20m</div></div><button class="button dark" onclick="openLog()">＋ Log activity</button></div></div>
+<div class="card loghero"><div class="row"><div><div class="label">Focus today</div><div class="big" id="logFocusBig">0m</div></div><button class="button dark" onclick="openLog()">＋ Log activity</button></div></div>
 <div class="section" id="logSectionDate">Today</div>
 <div class="card" id="logItemList"></div>
 <div class="section">Focus insights</div>
-<div class="card"><div class="row"><div><div class="label">Plan followed</div><div class="big" id="logPlanPercent">74%</div></div><div class="score" id="logScoreCircle"><b id="logScoreGrade">B</b></div></div><div class="small" style="margin-top:12px">Best focus window: 9–11 AM · 3h 15m unaccounted</div></div>
+<div class="card"><div class="row"><div><div class="label">Plan followed</div><div class="big" id="logPlanPercent">100%</div></div><div class="score" id="logScoreCircle"><b id="logScoreGrade">A</b></div></div><div class="small" style="margin-top:12px" id="logFocusSub">Active window calibrated to your wake & sleep rhythm.</div></div>
 </section>
 
 <!-- SPENDING / MONEY SCREEN -->
 <section class="screen" id="money">
 <div class="date">YOUR MONEY</div><div class="headline">Spending <em>check-in</em></div>
-<div class="card"><div class="label">Spent today</div><div class="row"><div class="money" id="moneySpentBig">₹ 680</div><span class="chip" id="moneyBudgetChip">Budget ₹1,800</span></div><div class="bar"><i id="moneySpentBar" style="width:38%;background:#ff9877"></i></div><div class="small" id="moneyLeftGuide">₹1,120 left in today's guide</div></div>
+<div class="card"><div class="label">Spent today</div><div class="row"><div class="money" id="moneySpentBig">₹ 0</div><span class="chip" id="moneyBudgetChip">Budget ₹1,000</span></div><div class="bar"><i id="moneySpentBar" style="width:0%;background:#ff9877"></i></div><div class="small" id="moneyLeftGuide">₹1,000 left in today's guide</div></div>
 <div style="display:flex;gap:8px"><button class="button dark" style="flex:1;padding:14px" onclick="openN()">🎙 Tell N</button><button class="button ghost" style="flex:1;padding:14px" onclick="openExpense()">＋ Add manually</button></div>
 <div class="section">Today’s purchases</div>
 <div class="card" id="moneyPurchaseList"></div>
-<div class="card insight"><div class="row"><strong style="font-size:13px">🪙 Your spending pattern</strong><span class="pill">WANTS</span></div><div class="tip">You’ve spent ₹1,260 on café treats this week. That’s 18% above your usual. Set a weekly treat limit?</div></div>
-<div class="section">This week</div>
-<div class="card"><div class="row"><span class="small">Food</span><b>₹2,480</b></div><div class="bar"><i style="width:69%;background:#ffa47b"></i></div><div class="row"><span class="small">Transport</span><b>₹1,120</b></div><div class="bar"><i style="width:34%;background:#6ac8a1"></i></div></div>
+<div class="card insight"><div class="row"><strong style="font-size:13px">🪙 Spending guide</strong><span class="pill">GUIDE</span></div><div class="tip">Stay mindful of treats and impulse spending. Speak to N anytime: "Spent ₹80 on coffee".</div></div>
 </section>
 
 <!-- INSIGHTS SCREEN -->
 <section class="screen" id="insights">
 <div class="date">YOUR WEEK AT A GLANCE</div><div class="headline">Small patterns,<br><em>big changes.</em></div>
-<div class="card"><div class="label">Weekly focus score</div><div class="row"><div class="big">B · 78%</div><span class="chip good">↑ 8 points</span></div><div class="bar"><i style="width:78%"></i></div><div class="small" id="insightsPlannedText">You planned 28h · logged 22h 10m</div></div>
-<div class="section">Your week in focus</div>
-<div class="card"><div class="row"><span class="small">Study</span><b>12h 40m</b></div><div class="bar"><i style="width:78%"></i></div><div class="row"><span class="small">Work</span><b>7h 20m</b></div><div class="bar"><i style="width:48%;background:#62c5a0"></i></div><div class="row"><span class="small">Unplanned scrolling</span><b>4h 05m</b></div><div class="bar"><i style="width:30%;background:#ff927f"></i></div></div>
-<div class="card insight"><strong style="font-size:13px">✦ Your weekly read</strong><div class="tip">Your strongest focus is before noon. Social scrolling tends to happen after lunch. Try moving one demanding task to your morning window and setting a 20-minute app break after lunch.</div></div>
-<div class="section">Spending reflection</div>
-<div class="card"><div class="row"><div><div class="label">Wants this week</div><div class="big" id="insightsWantsBig">₹2,140</div></div><span class="chip warn">7 purchases</span></div><div class="small" style="margin-top:9px">Coffee and snacks account for 62%. You decide what feels worthwhile.</div></div>
+<div class="card"><div class="label">Focus baseline</div><div class="row"><div class="big" id="insightsScoreBig">100%</div><span class="chip good">Day 1</span></div><div class="bar"><i style="width:100%"></i></div><div class="small" id="insightsPlannedText">Your schedule is aligned with your day rhythm.</div></div>
+<div class="section">Your rhythm in focus</div>
+<div class="card" id="insightsBreakdownCard">
+  <div style="font-size:12px;color:#888;line-height:1.6">As you log your study, work, and breaks with N, your personal focus patterns will illuminate here.</div>
+</div>
+<div class="card insight"><strong style="font-size:13px">✦ Mindful companion</strong><div class="tip">Protect your mornings for your highest cognitive demand. Use voice shortcuts with N to offload planning friction.</div></div>
 </section>
 
 <!-- ASSISTANT / PLAN SCREEN -->
 <section class="screen" id="assistant">
 <div class="date">YOUR PERSONAL PLANNER</div><div class="headline">Plan it <em>your way.</em></div>
-<div class="card assistant"><div class="label">N · YOUR DAY ASSISTANT</div><h2>Ready when you are.</h2><p>Say your priorities and commitments. N will help shape a flexible plan with room for breaks.</p><button class="button" onclick="openN()">● &nbsp;Talk to N</button></div>
+<div class="card assistant" style="display:flex;gap:14px;align-items:flex-start">
+  <div style="flex:1">
+    <div class="label">N · YOUR DAY PLANNER</div>
+    <h2>Ready when you are.</h2>
+    <p>Say your priorities and commitments. N will shape a flexible plan calibrated to your rhythm.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="button" onclick="openN()">● &nbsp;Talk to N</button>
+      <button class="button ghost" onclick="openDaySetupModal(false)">⚙ Rhythm</button>
+    </div>
+  </div>
+  <div style="width:54px;height:54px;border-radius:14px;overflow:hidden;border:1px solid #383838;flex-shrink:0;margin-top:2px">
+    <img src="logo.png" alt="N" style="width:100%;height:100%;object-fit:cover">
+  </div>
+</div>
 <div class="section" id="activePlanHeader">Today's Schedule</div>
 <div class="card" id="assistantPlanList"></div>
 </section>
@@ -154,7 +181,7 @@ body{background:#000}.phone{background:#000;border-color:#080808}.status,.app{ba
 <nav class="tabs"><button class="tab active" data-id="home" onclick="show('home')"><span>⌂</span>Today</button><button class="tab" data-id="log" onclick="show('log')"><span>◷</span>Time</button><button class="tab" data-id="money" onclick="show('money')"><span>₹</span>Money</button><button class="tab" data-id="insights" onclick="show('insights')"><span>▤</span>Insights</button><button class="tab" data-id="assistant" onclick="show('assistant')"><span>●</span>N</button></nav>
 
 <!-- MODAL SHEET -->
-<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet" id="sheet"></div></div>
+<div class="modal" id="modal" onclick="if(event.target===this&&!window.isNonDismissibleModal)closeModal()"><div class="sheet" id="sheet"></div></div>
 <div class="toast" id="toast">Saved</div>
 </main>
 
@@ -165,8 +192,15 @@ function show(id){
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.id===id));
   $('.app').scrollTop=0;
 }
-function modal(html){$('#sheet').innerHTML=html;$('#modal').classList.add('show')}
-function closeModal(){$('#modal').classList.remove('show')}
+function modal(html, nonDismissible = false){
+  window.isNonDismissibleModal = nonDismissible;
+  $('#sheet').innerHTML=html;
+  $('#modal').classList.add('show');
+}
+function closeModal(){
+  window.isNonDismissibleModal = false;
+  $('#modal').classList.remove('show');
+}
 function toast(t){$('#toast').textContent=t;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),1800)}
 function escapeHtml(str){
   if(!str) return '';
@@ -179,93 +213,85 @@ function escapeHtml(str){
 function getDayKey(d = new Date()){
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-function getTodayDateString(d = new Date()){
-  return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).toUpperCase();
+function getTodayDateString(){
+  const d = new Date();
+  const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+  return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]}`;
 }
-function getTodayShortDateString(d = new Date()){
-  return `Today · ${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+function getTodayShortDateString(){
+  const d = new Date();
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `Today · ${d.getDate()} ${months[d.getMonth()]}`;
 }
 
 /* =========================================================================
    2. OFFLINE VOICE SYNTHESIS (NATURAL SPEECH TONE)
    ========================================================================= */
-let voiceEnabled = true;
-function speakN(text){
-  if(!voiceEnabled || !('speechSynthesis' in window)) return;
+let isSpeaking = false;
+function speakN(text, onEndCallback){
+  if(!window.speechSynthesis) return;
   try{
     window.speechSynthesis.cancel();
-    // Clean any action tags before speaking
-    const cleanText = text.replace(/\[(?:SPEND|LOG|PLAN):[^\]]+\]/gi, '').trim();
-    if(!cleanText) return;
+    const clean = text.replace(/\[(SPEND|LOG|PLAN):.*?\]/g, '').trim();
+    if(!clean) return;
 
-    const u = new SpeechSynthesisUtterance(cleanText);
-    u.rate = 1.02;
-    u.pitch = 1.0;
+    const u = new SpeechSynthesisUtterance(clean);
+    u.rate = 1.0;
+    u.pitch = 1.02;
+
     const voices = window.speechSynthesis.getVoices();
-    const voice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Siri') || v.name.includes('Samantha') || v.name.includes('Karen') || v.name.includes('Daniel') || v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('David'))) || voices.find(v => v.lang.startsWith('en'));
-    if(voice) u.voice = voice;
-    const ind = $('#voiceIndicator');
-    if(ind){
-      ind.textContent = '✦ N is speaking…';
-      u.onend = () => { if(ind) ind.textContent = ''; };
-      u.onerror = () => { if(ind) ind.textContent = ''; };
-    }
+    const preferred = voices.find(v => (v.name.includes('Samantha') || v.name.includes('Siri') || v.name.includes('Daniel') || v.name.includes('Natural') || (v.lang.startsWith('en') && !v.localService)) && v.lang.startsWith('en'))
+                   || voices.find(v => v.lang.startsWith('en-US'))
+                   || voices.find(v => v.lang.startsWith('en'));
+    if(preferred) u.voice = preferred;
+
+    isSpeaking = true;
+    u.onend = () => { isSpeaking = false; if(onEndCallback) onEndCallback(); };
+    u.onerror = () => { isSpeaking = false; };
     window.speechSynthesis.speak(u);
   }catch(e){
-    console.warn('TTS error:', e);
+    isSpeaking = false;
   }
 }
-if('speechSynthesis' in window){
-  window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+
+if(window.speechSynthesis && window.speechSynthesis.onvoiceschanged !== undefined){
+  window.speechSynthesis.onvoiceschanged = () => {};
 }
 
 /* =========================================================================
-   3. APP STATE & PERSISTENCE
+   3. APP STATE & PERSISTENCE (CLEAN INITIAL STATE)
    ========================================================================= */
-const DEFAULT_STATE = {
+const FRESH_STATE = {
   currentDayKey: getDayKey(),
-  history: {},
-  focusMinutes: 260,
-  focusScore: 74,
-  planMatch: 74,
-  dailyBudget: 1800,
-  spentToday: 680,
-  wantsToday: 220,
+  setupDone: false,
+  wakeTime: '08:00 AM',
+  wakeTimeRaw: '08:00',
+  sleepTime: '11:00 PM',
+  sleepTimeRaw: '23:00',
+  dailyBudget: 1000,
+  focusMinutes: 0,
+  focusScore: 100,
+  planMatch: 100,
+  spentToday: 0,
+  wantsToday: 0,
   aiKey: '',
-  aiProvider: 'gemini', // 'gemini' or 'openai'
-  activities: [
-    { icon: '📚', title: 'Study · Biology', sub: '9:00 – 10:30 · Deep focus', amount: '1h 30m', minutes: 90 },
-    { icon: '☕', title: 'Breakfast & break', sub: '10:30 – 11:00 · Break', amount: '30m', minutes: 30 },
-    { icon: '💻', title: 'Project work', sub: '11:00 – 12:20 · Work', amount: '1h 20m', minutes: 80 }
-  ],
-  logItems: [
-    { time: '9:00 AM', title: '📚 Study · Biology', sub: '1h 30m · Deep focus' },
-    { time: '10:30 AM', title: '☕ Breakfast & break', sub: '30m · Break' },
-    { time: '11:00 AM', title: '💻 Project work', sub: '1h 20m · Work' },
-    { time: '12:20 PM', title: '📱 Social media', sub: '25m · Personal · Could reclaim' },
-    { time: '1:00 PM', title: '🍽 Lunch', sub: '35m · Break' }
-  ],
-  purchases: [
-    { icon: '🥗', title: 'Lunch', sub: 'Food · Need', amount: 260, type: 'need' },
-    { icon: '🧋', title: 'Bubble tea', sub: 'Treat · Want', amount: 180, type: 'want' },
-    { icon: '🚕', title: 'Auto ride', sub: 'Transport · Need', amount: 240, type: 'need' }
-  ],
-  plans: [
-    { icon: '🎯', title: '9:00 · Priority focus block', desc: 'Start with your most important task while your energy is fresh.' },
-    { icon: '☕', title: '10:30 · Short break', desc: 'Step away, stretch, and recharge.' },
-    { icon: '🧠', title: '11:00 · Second focus block', desc: 'Continue or move to the next task on your list.' },
-    { icon: '🍽', title: '12:30 · Lunch & reset', desc: 'Take a proper break before your commitment.' },
-    { icon: '📌', title: 'Fixed commitment', desc: 'Space reserved around your afternoon schedule.' }
-  ]
+  aiProvider: 'gemini',
+  activities: [],
+  logItems: [],
+  purchases: [],
+  plans: [],
+  history: {}
 };
 
 let state = null;
+
 function loadState(){
   try{
-    const saved = localStorage.getItem('n_app_state_v5');
-    state = saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(DEFAULT_STATE));
+    const saved = localStorage.getItem('n_app_state_v6');
+    state = saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(FRESH_STATE));
   }catch(e){
-    state = JSON.parse(JSON.stringify(DEFAULT_STATE));
+    state = JSON.parse(JSON.stringify(FRESH_STATE));
   }
 
   const todayKey = getDayKey();
@@ -284,50 +310,48 @@ function loadState(){
 
     state.currentDayKey = todayKey;
     state.focusMinutes = 0;
-    state.focusScore = 80;
+    state.focusScore = 100;
     state.planMatch = 100;
     state.spentToday = 0;
     state.wantsToday = 0;
     state.activities = [];
     state.purchases = [];
     state.logItems = [];
-    try{ localStorage.setItem('n_app_state_v5', JSON.stringify(state)); }catch(e){}
+    saveState();
   }
 }
 
 function saveState(){
   try{
-    localStorage.setItem('n_app_state_v5', JSON.stringify(state));
+    localStorage.setItem('n_app_state_v6', JSON.stringify(state));
   }catch(e){}
   renderApp();
 }
 
-function formatMinutes(m){
-  const h = Math.floor(m / 60);
-  const min = m % 60;
-  if(h > 0 && min > 0) return `${h}h ${min}m`;
-  if(h > 0) return `${h}h`;
-  return `${min}m`;
+function formatMinutes(mins){
+  if(mins < 60) return `${mins}m`;
+  const h = Math.floor(mins / 60);
+  const m = mins % 60;
+  return m === 0 ? `${h}h` : `${h}h ${String(m).padStart(2,'0')}m`;
 }
 
-function parseMinsFromStr(durStr){
-  if(!durStr) return 30;
-  let mins = 0;
-  const hMatch = durStr.match(/([0-9]+(?:\.[0-9]+)?)\s*h/i);
-  const mMatch = durStr.match(/([0-9]+)\s*m/i);
-  if(hMatch) mins += Math.round(parseFloat(hMatch[1]) * 60);
-  if(mMatch) mins += parseInt(mMatch[1], 10);
-  if(mins === 0){
-    const num = parseInt(durStr.replace(/[^0-9]/g,''), 10);
-    if(!isNaN(num)) mins = num <= 8 ? num * 60 : num;
+function parseMinsFromStr(str){
+  if(!str) return 30;
+  let total = 0;
+  const hMatch = str.match(/(\d+)\s*h/i);
+  const mMatch = str.match(/(\d+)\s*m/i);
+  if(hMatch) total += parseInt(hMatch[1], 10) * 60;
+  if(mMatch) total += parseInt(mMatch[1], 10);
+  if(total === 0){
+    const num = parseInt(str, 10);
+    if(!isNaN(num)) total = num;
   }
-  return mins > 0 ? mins : 30;
+  return total || 30;
 }
 
 function renderApp(){
   if(!state) return;
 
-  // Live Dynamic Dates
   const fullDate = getTodayDateString();
   const shortDate = getTodayShortDateString();
   if($('#homeDate')) $('#homeDate').textContent = fullDate;
@@ -336,20 +360,31 @@ function renderApp(){
   // Home Focus
   const focusStr = formatMinutes(state.focusMinutes);
   if($('#homeFocusBig')) $('#homeFocusBig').textContent = focusStr;
-  if($('#homeFocusSessions')) $('#homeFocusSessions').textContent = `Across ${state.activities.length} logged sessions`;
+  if($('#homeFocusSessions')) {
+    $('#homeFocusSessions').textContent = state.activities.length === 0
+      ? 'Clean slate · 0 sessions'
+      : `Across ${state.activities.length} logged sessions`;
+  }
   if($('#homeScoreVal')) $('#homeScoreVal').textContent = state.focusScore;
   if($('#homeScoreCircle')) $('#homeScoreCircle').style.background = `conic-gradient(#fff 0 ${state.focusScore}%, #383838 ${state.focusScore}%)`;
   if($('#homePlanMatch')) $('#homePlanMatch').textContent = `Plan match · ${state.planMatch}%`;
 
-  // Home Activities with Tap-to-Edit
+  // Home Activities
   if($('#homeActivityList')){
     if(state.activities.length === 0){
-      $('#homeActivityList').innerHTML = `<div class="small" style="text-align:center;padding:12px;color:#666">No activities logged yet today. Tell N to log one!</div>`;
+      $('#homeActivityList').innerHTML = `
+        <div class="empty-state">
+          <div style="font-size:24px;margin-bottom:6px">⏱</div>
+          <div style="font-family:'Michroma',sans-serif;font-size:10px;color:#fff;margin-bottom:4px;letter-spacing:.06em">NO ACTIVITIES RECORDED YET</div>
+          <div style="font-size:11px;color:#888;line-height:1.6;margin-bottom:12px">Your day is empty and fresh. Tell N or tap below to track focus.</div>
+          <button class="button dark" style="font-size:8px;padding:9px 15px" onclick="openLog()">＋ Add Activity</button>
+        </div>
+      `;
     } else {
       $('#homeActivityList').innerHTML = state.activities.map((a, idx) => `
         <div class="activity" style="cursor:pointer" onclick="openEditActivity(${idx})" title="Tap to edit this activity">
           <div class="icon">${a.icon}</div>
-          <div style="flex:1"><div class="title">${a.title}</div><div class="sub">${a.sub}</div></div>
+          <div style="flex:1"><div class="title">${escapeHtml(a.title)}</div><div class="sub">${escapeHtml(a.sub)}</div></div>
           <div class="amount" style="display:flex;align-items:center;gap:6px">${a.amount} <span style="font-size:11px;color:#777">✎</span></div>
         </div>
       `).join('');
@@ -357,12 +392,17 @@ function renderApp(){
   }
 
   // Home Spending
-  const spentPercent = Math.min(100, Math.round((state.spentToday / state.dailyBudget) * 100));
+  const spentPercent = state.dailyBudget > 0 ? Math.min(100, Math.round((state.spentToday / state.dailyBudget) * 100)) : 0;
   const remaining = Math.max(0, state.dailyBudget - state.spentToday);
   if($('#homeSpentBig')) $('#homeSpentBig').textContent = `₹ ${state.spentToday.toLocaleString('en-IN')}`;
   if($('#homeWantsChip')) $('#homeWantsChip').textContent = `₹${state.wantsToday.toLocaleString('en-IN')} wants`;
   if($('#homeSpentBar')) $('#homeSpentBar').style.width = `${spentPercent}%`;
-  if($('#homeSpentGuide')) $('#homeSpentGuide').textContent = `${spentPercent}% of your ₹${state.dailyBudget.toLocaleString('en-IN')} daily guide`;
+  if($('#homeSpentGuide')) $('#homeSpentGuide').textContent = `${spentPercent}% of your ₹${state.dailyBudget.toLocaleString('en-IN')} daily guide (₹${remaining.toLocaleString('en-IN')} left)`;
+
+  // Home Rhythm Insight
+  if($('#homeRhythmInsight')){
+    $('#homeRhythmInsight').textContent = `Daily rhythm calibrated: ${state.wakeTime} to ${state.sleepTime}. Daily spending guide ₹${state.dailyBudget.toLocaleString('en-IN')}.`;
+  }
 
   // Log Screen
   if($('#logFocusBig')) $('#logFocusBig').textContent = focusStr;
@@ -373,13 +413,20 @@ function renderApp(){
   if($('#logScoreCircle')) $('#logScoreCircle').style.background = `conic-gradient(#fff 0 ${state.focusScore}%, #383838 ${state.focusScore}%)`;
   if($('#logItemList')){
     if(state.logItems.length === 0){
-      $('#logItemList').innerHTML = `<div class="small" style="text-align:center;padding:12px;color:#666">Your timeline is clear. Tap 'Log activity' or speak to N.</div>`;
+      $('#logItemList').innerHTML = `
+        <div class="empty-state">
+          <div style="font-size:24px;margin-bottom:6px">📋</div>
+          <div style="font-family:'Michroma',sans-serif;font-size:10px;color:#fff;margin-bottom:4px;letter-spacing:.06em">TIMELINE EMPTY</div>
+          <div style="font-size:11px;color:#888;line-height:1.6;margin-bottom:12px">Your day log and planned milestones will appear here chronologically.</div>
+          <button class="button dark" style="font-size:8px;padding:9px 15px" onclick="openLog()">＋ Log First Activity</button>
+        </div>
+      `;
     } else {
       $('#logItemList').innerHTML = state.logItems.map((item, idx) => `
         <div class="logitem" style="cursor:pointer" onclick="openEditLogItem(${idx})" title="Tap to edit time entry">
           <div class="time">${item.time}</div>
           <div class="timeline" style="display:flex;justify-content:space-between;align-items:flex-start">
-            <div><strong>${item.title}</strong><small>${item.sub}</small></div>
+            <div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.sub)}</small></div>
             <span style="font-size:11px;color:#777;padding-left:8px">✎</span>
           </div>
         </div>
@@ -394,12 +441,19 @@ function renderApp(){
   if($('#moneyLeftGuide')) $('#moneyLeftGuide').textContent = `₹${remaining.toLocaleString('en-IN')} left in today's guide`;
   if($('#moneyPurchaseList')){
     if(state.purchases.length === 0){
-      $('#moneyPurchaseList').innerHTML = `<div class="small" style="text-align:center;padding:12px;color:#666">No purchases logged today.</div>`;
+      $('#moneyPurchaseList').innerHTML = `
+        <div class="empty-state">
+          <div style="font-size:24px;margin-bottom:6px">🪙</div>
+          <div style="font-family:'Michroma',sans-serif;font-size:10px;color:#fff;margin-bottom:4px;letter-spacing:.06em">ZERO EXPENSES LOGGED TODAY</div>
+          <div style="font-size:11px;color:#888;line-height:1.6;margin-bottom:12px">Full ₹${state.dailyBudget.toLocaleString('en-IN')} remaining. Tell N or tap below to track purchases.</div>
+          <button class="button dark" style="font-size:8px;padding:9px 15px" onclick="openExpense()">＋ Add Expense</button>
+        </div>
+      `;
     } else {
       $('#moneyPurchaseList').innerHTML = state.purchases.map(p => `
         <div class="activity">
           <div class="icon">${p.icon}</div>
-          <div><div class="title">${p.title}</div><div class="sub">${p.sub}</div></div>
+          <div><div class="title">${escapeHtml(p.title)}</div><div class="sub">${escapeHtml(p.sub)}</div></div>
           <div class="amount">₹${p.amount.toLocaleString('en-IN')}</div>
         </div>
       `).join('');
@@ -408,137 +462,136 @@ function renderApp(){
 
   // Assistant / Plan Screen
   if($('#assistantPlanList')){
-    $('#assistantPlanList').innerHTML = state.plans.map(pl => `
-      <div class="planrow">
-        <div class="icon">${pl.icon}</div>
-        <div><b>${pl.title}</b>${pl.desc}</div>
-      </div>
-    `).join('');
+    if(!state.plans || state.plans.length === 0){
+      $('#assistantPlanList').innerHTML = `
+        <div class="empty-state">
+          <div style="font-size:24px;margin-bottom:6px">✦</div>
+          <div style="font-family:'Michroma',sans-serif;font-size:10px;color:#fff;margin-bottom:4px;letter-spacing:.06em">NO SCHEDULE BUILT YET</div>
+          <div style="font-size:11px;color:#888;line-height:1.6;margin-bottom:12px">Calibrate your day with intentional focus windows and space to breathe.</div>
+          <button class="button dark" style="font-size:8px;padding:9px 15px" onclick="openAssistant()">Build Day Plan ✦</button>
+        </div>
+      `;
+    } else {
+      $('#assistantPlanList').innerHTML = state.plans.map(pl => `
+        <div class="planrow">
+          <div class="icon">${pl.icon}</div>
+          <div><b>${escapeHtml(pl.title)}</b>${escapeHtml(pl.desc)}</div>
+        </div>
+      `).join('');
+    }
   }
 }
 
 /* =========================================================================
    4. ACTIVITY EDITING & MANAGEMENT
    ========================================================================= */
-
-function openEditActivity(idx){
-  const act = state.activities[idx];
-  if(!act) return;
-
-  const rawTitle = act.title || '';
-  const parts = rawTitle.includes('·') ? rawTitle.split('·').map(s=>s.trim()) : [rawTitle];
-  const cat = parts.length > 1 ? parts[0] : 'Study';
-  const name = parts.length > 1 ? parts.slice(1).join(' · ') : parts[0];
-  const timeStr = act.sub ? act.sub.split('·')[0].trim() : '9:00 AM';
+function openEditActivity(index){
+  const item = state.activities[index];
+  if(!item) return;
 
   modal(`
     <button class="close" onclick="closeModal()">×</button>
     <div class="label">EDIT ACTIVITY</div>
-    <h2>Edit activity details</h2>
-    <input class="input" id="editActName" value="${escapeHtml(name)}" placeholder="Activity or task name">
-    <select class="input" id="editActCategory">
-      <option ${cat === 'Study' ? 'selected' : ''}>Study</option>
-      <option ${cat === 'Work' ? 'selected' : ''}>Work</option>
-      <option ${cat === 'Meeting' ? 'selected' : ''}>Meeting</option>
-      <option ${cat === 'Break' ? 'selected' : ''}>Break</option>
-      <option ${cat === 'Personal' ? 'selected' : ''}>Personal</option>
-    </select>
-    <div class="row">
-      <input class="input" id="editActTime" style="width:48%" value="${escapeHtml(timeStr)}" placeholder="Time (e.g. 9:00 AM)">
-      <input class="input" id="editActDuration" style="width:48%" value="${escapeHtml(act.amount)}" placeholder="Duration (e.g. 1h 30m)">
+    <h2>Update your session</h2>
+    <div style="margin-top:14px">
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Icon (Emoji)</label>
+      <input class="input" id="editActIcon" value="${escapeHtml(item.icon)}" style="width:60px;text-align:center;font-size:18px;margin-bottom:10px">
+      
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Activity Title</label>
+      <input class="input" id="editActTitle" value="${escapeHtml(item.title)}" placeholder="e.g. Study · Biology">
+      
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Subtitle / Context</label>
+      <input class="input" id="editActSub" value="${escapeHtml(item.sub)}" placeholder="e.g. 9:00 – 10:30 · Deep focus">
+      
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Duration</label>
+      <input class="input" id="editActAmount" value="${escapeHtml(item.amount)}" placeholder="e.g. 1h 30m or 45m">
     </div>
     <div style="display:flex;gap:8px;margin-top:14px">
-      <button class="button dark" style="flex:2;padding:14px" onclick="saveEditedActivity(${idx})">Save changes</button>
-      <button class="button ghost" style="flex:1;padding:14px;color:#ff6633;border-color:#ff663366" onclick="deleteActivity(${idx})">Delete</button>
+      <button class="button dark" style="flex:2;padding:14px" onclick="saveEditedActivity(${index})">Save Changes</button>
+      <button class="button ghost" style="flex:1;padding:14px;border-color:#ff4444;color:#ff6666" onclick="deleteActivity(${index})">Delete</button>
     </div>
   `);
-  speakN("Edit your activity details.");
 }
 
-function saveEditedActivity(idx){
-  const act = state.activities[idx];
-  if(!act) return;
+function saveEditedActivity(index){
+  const title = ($('#editActTitle').value || '').trim();
+  const sub = ($('#editActSub').value || '').trim();
+  const amount = ($('#editActAmount').value || '').trim();
+  const icon = ($('#editActIcon').value || '🎯').trim();
 
-  const name = ($('#editActName').value || 'Focus session').trim();
-  const cat = $('#editActCategory').value;
-  const time = ($('#editActTime').value || 'Now').trim();
-  const durStr = ($('#editActDuration').value || '1h').trim();
-  const mins = parseMinsFromStr(durStr);
+  if(!title){ toast('Title cannot be empty'); return; }
 
-  const iconMap = { Study: '📚', Work: '💻', Meeting: '📌', Break: '☕', Personal: '📱' };
-  const icon = iconMap[cat] || '⏱️';
+  const oldMins = state.activities[index].minutes || parseMinsFromStr(state.activities[index].amount);
+  const newMins = parseMinsFromStr(amount);
 
-  act.icon = icon;
-  act.title = `${cat} · ${name}`;
-  act.sub = `${time} · Deep focus`;
-  act.amount = formatMinutes(mins);
-  act.minutes = mins;
+  state.activities[index] = {
+    icon: icon,
+    title: title,
+    sub: sub,
+    amount: amount || `${newMins}m`,
+    minutes: newMins
+  };
 
-  state.focusMinutes = state.activities.reduce((acc, a) => acc + (a.minutes || 0), 0);
-  state.focusScore = Math.min(100, Math.max(30, Math.round((state.focusMinutes / 300) * 85)));
-
-  if(state.logItems && state.logItems[idx]){
-    state.logItems[idx].time = time;
-    state.logItems[idx].title = `${icon} ${cat} · ${name}`;
-    state.logItems[idx].sub = `${formatMinutes(mins)} · Deep focus`;
-  }
-
+  state.focusMinutes = Math.max(0, state.focusMinutes - oldMins + newMins);
   saveState();
   closeModal();
   toast('Activity updated');
-  speakN(`Updated ${name} to ${formatMinutes(mins)}.`);
 }
 
-function deleteActivity(idx){
-  const act = state.activities[idx];
-  const name = act ? act.title : 'Activity';
-  state.activities.splice(idx, 1);
-  if(state.logItems && state.logItems[idx]){
-    state.logItems.splice(idx, 1);
-  }
-  state.focusMinutes = state.activities.reduce((acc, a) => acc + (a.minutes || 0), 0);
-  state.focusScore = Math.min(100, Math.max(30, Math.round((state.focusMinutes / 300) * 85)));
-
+function deleteActivity(index){
+  const oldMins = state.activities[index].minutes || parseMinsFromStr(state.activities[index].amount);
+  state.activities.splice(index, 1);
+  state.focusMinutes = Math.max(0, state.focusMinutes - oldMins);
   saveState();
   closeModal();
-  toast('Activity deleted');
-  speakN("Activity deleted.");
+  toast('Activity removed');
 }
 
-function openEditLogItem(idx){
-  const item = state.logItems[idx];
+function openEditLogItem(index){
+  const item = state.logItems[index];
   if(!item) return;
 
   modal(`
     <button class="close" onclick="closeModal()">×</button>
     <div class="label">EDIT TIMELINE ENTRY</div>
-    <h2>Edit time entry</h2>
-    <input class="input" id="editLogTitle" value="${escapeHtml(item.title)}" placeholder="Title or task">
-    <div class="row">
-      <input class="input" id="editLogTime" style="width:48%" value="${escapeHtml(item.time)}" placeholder="Time (e.g. 9:00 AM)">
-      <input class="input" id="editLogSub" style="width:48%" value="${escapeHtml(item.sub)}" placeholder="Description / notes">
+    <h2>Update log entry</h2>
+    <div style="margin-top:14px">
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Time Label</label>
+      <input class="input" id="editLogTime" value="${escapeHtml(item.time)}" placeholder="e.g. 9:00 AM">
+      
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Title</label>
+      <input class="input" id="editLogTitle" value="${escapeHtml(item.title)}" placeholder="e.g. 📚 Study">
+      
+      <label style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em">Details / Notes</label>
+      <input class="input" id="editLogSub" value="${escapeHtml(item.sub)}" placeholder="e.g. Deep focus session">
     </div>
     <div style="display:flex;gap:8px;margin-top:14px">
-      <button class="button dark" style="flex:2;padding:14px" onclick="saveEditedLogItem(${idx})">Save changes</button>
-      <button class="button ghost" style="flex:1;padding:14px;color:#ff6633;border-color:#ff663366" onclick="deleteLogItem(${idx})">Delete</button>
+      <button class="button dark" style="flex:2;padding:14px" onclick="saveEditedLogItem(${index})">Save Changes</button>
+      <button class="button ghost" style="flex:1;padding:14px;border-color:#ff4444;color:#ff6666" onclick="deleteLogItem(${index})">Delete</button>
     </div>
   `);
 }
 
-function saveEditedLogItem(idx){
-  const item = state.logItems[idx];
-  if(!item) return;
-  item.title = ($('#editLogTitle').value || 'Activity').trim();
-  item.time = ($('#editLogTime').value || 'Now').trim();
-  item.sub = ($('#editLogSub').value || '').trim();
+function saveEditedLogItem(index){
+  const time = ($('#editLogTime').value || '').trim();
+  const title = ($('#editLogTitle').value || '').trim();
+  const sub = ($('#editLogSub').value || '').trim();
+
+  if(!title){ toast('Title cannot be empty'); return; }
+
+  state.logItems[index] = {
+    time: time || '12:00 PM',
+    title: title,
+    sub: sub
+  };
 
   saveState();
   closeModal();
-  toast('Entry updated');
+  toast('Log entry updated');
 }
 
-function deleteLogItem(idx){
-  state.logItems.splice(idx, 1);
+function deleteLogItem(index){
+  state.logItems.splice(index, 1);
   saveState();
   closeModal();
   toast('Entry deleted');
@@ -547,426 +600,546 @@ function deleteLogItem(idx){
 /* =========================================================================
    5. ADVANCED CHATGPT-STYLE CONVERSATIONAL INTELLIGENCE & LLM BRAIN
    ========================================================================= */
-
 function openAiSettings(){
   modal(`
     <button class="close" onclick="closeModal()">×</button>
-    <div class="label">N · AI BRAIN SETTINGS</div>
-    <h2>Connect Live AI (ChatGPT / Gemini)</h2>
-    <p>N is currently equipped with a smart on-device conversational engine. To give N full live generative intelligence like ChatGPT, enter a free Gemini or OpenAI key.</p>
-    <div class="label" style="margin-top:12px">AI Provider</div>
-    <select class="input" id="aiProviderSelect">
-      <option value="gemini" ${state.aiProvider === 'gemini' ? 'selected' : ''}>Google Gemini (Free tier available at aistudio.google.com)</option>
-      <option value="openai" ${state.aiProvider === 'openai' ? 'selected' : ''}>OpenAI (ChatGPT API key)</option>
-    </select>
-    <div class="label">API Key</div>
-    <input class="input" id="aiKeyInput" type="password" value="${escapeHtml(state.aiKey || '')}" placeholder="Paste API key here (saved locally)">
-    <p style="font-size:11px;color:#888;margin-top:4px">Your key is kept 100% private on your iPhone. When offline, N seamlessly uses the on-device brain.</p>
-    <div style="display:flex;gap:8px;margin-top:12px">
-      <button class="button dark" style="flex:1;padding:14px" onclick="saveAiSettings()">Save AI Brain</button>
-      ${state.aiKey ? `<button class="button ghost" style="padding:14px;color:#ff6633" onclick="clearAiSettings()">Disconnect</button>` : ''}
+    <div class="label">⚡ N · AI BRAIN ENGINE</div>
+    <h2>Connect Generative AI</h2>
+    <p style="font-size:12px;color:#888;line-height:1.6">
+      By default, N uses its fast on-device conversational intelligence offline. To give N real-time ChatGPT-level generative reasoning, you can add an API key (saved strictly in your device's local storage).
+    </p>
+    <div style="margin:14px 0">
+      <label style="font-size:11px;color:#aaa;display:block;margin-bottom:6px">SELECT PROVIDER</label>
+      <div style="display:flex;gap:8px;margin-bottom:12px">
+        <button type="button" class="chip ${state.aiProvider === 'gemini' ? 'good' : ''}" style="flex:1;padding:10px;text-align:center" onclick="state.aiProvider='gemini';saveState();openAiSettings()">Google Gemini (Free)</button>
+        <button type="button" class="chip ${state.aiProvider === 'openai' ? 'good' : ''}" style="flex:1;padding:10px;text-align:center" onclick="state.aiProvider='openai';saveState();openAiSettings()">OpenAI ChatGPT</button>
+      </div>
+      <label style="font-size:11px;color:#aaa;display:block;margin-bottom:6px">API KEY</label>
+      <input type="password" class="input" id="aiKeyInput" value="${escapeHtml(state.aiKey || '')}" placeholder="Paste ${state.aiProvider === 'gemini' ? 'Gemini' : 'OpenAI'} API key">
+      <small style="color:#666;font-size:10px;display:block;line-height:1.5">
+        ${state.aiProvider === 'gemini' ? 'Get a free key at <b style="color:#aaa">aistudio.google.com</b>' : 'Get a key at <b style="color:#aaa">platform.openai.com</b>'}
+      </small>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="button dark" style="flex:2;padding:14px" onclick="saveAiSettings()">Save Brain Key</button>
+      ${state.aiKey ? '<button class="button ghost" style="flex:1;padding:14px" onclick="clearAiSettings()">Remove</button>' : ''}
     </div>
   `);
 }
 
 function saveAiSettings(){
-  state.aiProvider = $('#aiProviderSelect').value;
-  state.aiKey = ($('#aiKeyInput').value || '').trim();
+  const key = ($('#aiKeyInput').value || '').trim();
+  state.aiKey = key;
   saveState();
   closeModal();
-  toast(state.aiKey ? 'Live AI brain active!' : 'On-device brain active');
-  speakN(state.aiKey ? "Live AI brain connected. Ready to talk." : "Using on-device smart brain.");
+  toast(key ? 'AI Brain connected' : 'Using on-device engine');
 }
 
 function clearAiSettings(){
   state.aiKey = '';
   saveState();
   closeModal();
-  toast('AI Brain cleared');
-  speakN("Reverted to on-device conversational brain.");
+  toast('Key removed. On-device mode active.');
 }
 
-// Live LLM Call (Gemini / OpenAI)
 async function callCloudLLM(userPrompt){
-  const isGemini = state.aiProvider === 'gemini';
-  const planSummary = state.plans.map(p => p.title).join(', ');
-  const focusStr = formatMinutes(state.focusMinutes);
+  if(!state.aiKey) return null;
+  const systemPrompt = `You are N, a sleek, sharp, calm, personal companion. Talk like ChatGPT or Jarvis — natural, warm, intelligent, concise (1-3 sentences max).
+Current user context:
+- Time & Date: ${new Date().toLocaleTimeString()} on ${getTodayDateString()}
+- Daily Rhythm: Wake at ${state.wakeTime}, Sleep at ${state.sleepTime}
+- Focus Time Today: ${formatMinutes(state.focusMinutes)}
+- Spent Today: ₹${state.spentToday} of ₹${state.dailyBudget} daily budget (₹${Math.max(0, state.dailyBudget - state.spentToday)} remaining)
+- Scheduled Tasks: ${state.plans.map(p=>p.title).join(', ') || 'None yet'}
 
-  const systemPrompt = `You are N, a sophisticated, calm, and articulate focus companion inspired by ChatGPT and Jarvis. 
-You speak naturally, warmly, and intelligently—never sounding like a rigid phone menu or generic assistant bot.
-The user is talking with you aloud on their iPhone.
-Keep your verbal replies natural, concise, and punchy (1 to 3 sentences maximum), ideal for voice synthesis.
-User's Real Context:
-- Focus today: ${focusStr} across ${state.activities.length} sessions (Score: ${state.focusScore})
-- Spending today: ₹${state.spentToday} out of ₹${state.dailyBudget} daily guide (Wants: ₹${state.wantsToday})
-- Active plan: ${planSummary || 'None active yet'}
+If the user wants to log spending, include a tag: [SPEND: <amount>, <category>] (e.g. [SPEND: 150, food]).
+If the user wants to log an activity, include: [LOG: <title>, <duration_minutes>] (e.g. [LOG: Study Biology, 45]).
+If the user asks to plan their day, suggest a clear 3-4 block outline and include [PLAN: <task1>, <task2>, <task3>].
+Keep your spoken response natural, punchy, conversational, and direct.`;
 
-Actions instructions:
-- If user wants to log spending: append [SPEND: amount, category, description, isWant(true/false)] at the very end.
-- If user wants to log focus/activity: append [LOG: minutes, taskName, category] at the very end.
-- If user wants to plan their day: append [PLAN: item1, item2, item3...] at the very end.
-Otherwise, respond naturally, empathetically, and conversationally.`;
-
-  if(isGemini){
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${state.aiKey}`;
-    const payload = {
-      contents: [
-        { role: 'user', parts: [{ text: `${systemPrompt}\n\nUser: "${userPrompt}"` }] }
-      ]
-    };
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    if(!res.ok) throw new Error('Gemini API error ' + res.status);
-    const data = await res.json();
-    return data.candidates[0].content.parts[0].text;
-  } else {
-    const url = 'https://api.openai.com/v1/chat/completions';
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${state.aiKey}`
-      },
-      body: JSON.stringify({
-        model: 'gpt-4o-mini',
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: userPrompt }
-        ],
-        max_tokens: 150
-      })
-    });
-    if(!res.ok) throw new Error('OpenAI API error ' + res.status);
-    const data = await res.json();
-    return data.choices[0].message.content;
+  try{
+    if(state.aiProvider === 'gemini'){
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${encodeURIComponent(state.aiKey)}`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [
+            { role: 'user', parts: [{ text: `${systemPrompt}\n\nUser: ${userPrompt}` }] }
+          ],
+          generationConfig: { temperature: 0.7, maxOutputTokens: 200 }
+        })
+      });
+      if(!res.ok) throw new Error('API request failed');
+      const data = await res.json();
+      return data.candidates[0].content.parts[0].text.trim();
+    } else {
+      const url = 'https://api.openai.com/v1/chat/completions';
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${state.aiKey}`
+        },
+        body: JSON.stringify({
+          model: 'gpt-4o-mini',
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt }
+          ],
+          max_tokens: 200,
+          temperature: 0.7
+        })
+      });
+      if(!res.ok) throw new Error('OpenAI request failed');
+      const data = await res.json();
+      return data.choices[0].message.content.trim();
+    }
+  }catch(e){
+    console.warn('Cloud LLM failed, falling back to local NLP:', e);
+    return null;
   }
 }
 
-// Highly Articulate On-Device Conversational Engine (Works with 0 network)
-function getLocalConversationalReply(t){
-  const lower = t.toLowerCase();
-  const focusStr = formatMinutes(state.focusMinutes);
-  const remainingBudget = Math.max(0, state.dailyBudget - state.spentToday);
+function getLocalConversationalReply(text){
+  const t = text.toLowerCase().trim();
 
-  // 1. GREETINGS & CHECK-INS
-  if(/\b(hi|hello|hey|good morning|good evening|good afternoon|what's up|how are you|sup)\b/i.test(lower)){
-    const hour = new Date().getHours();
-    if(hour < 12) return "Good morning. Fresh day ahead—what's our number one focus today?";
-    if(hour < 17) return `Hey there. You've logged ${focusStr} of focus today. What are we diving into next?`;
-    return `Good evening. You've logged ${focusStr} across ${state.activities.length} sessions. How are you feeling about today?`;
+  // 1. Spending
+  const spendMatch = t.match(/(?:spent|paid|cost|buy|bought|spending|charged|bill)\s*(?:of|is|was|for)?\s*(?:₹|rs\.?|inr)?\s*(\d+)/i)
+                  || t.match(/(\d+)\s*(?:₹|rs\.?|rupees)?\s*(?:for|on|at)?\s*(?:spent|food|coffee|lunch|tea|auto|cab|uber|shopping|groceries)/i);
+  if(spendMatch){
+    const amount = parseInt(spendMatch[1], 10);
+    let category = 'Other';
+    if(/(food|lunch|dinner|breakfast|snack|burger|pizza|meal|cafe|coffee|tea|juice)/i.test(t)) category = 'Food';
+    else if(/(auto|cab|uber|ola|metro|fuel|petrol|transport|ride|bus)/i.test(t)) category = 'Transport';
+    else if(/(shop|shirt|shoes|amazon|clothes|buy)/i.test(t)) category = 'Shopping';
+    else if(/(bill|wifi|electricity|rent|subscription)/i.test(t)) category = 'Bills';
+
+    const remaining = Math.max(0, state.dailyBudget - (state.spentToday + amount));
+    return {
+      speech: `Logged ₹${amount} for ${category}. You've got ₹${remaining.toLocaleString('en-IN')} remaining in today's guide.`,
+      action: { type: 'spend', amount, category }
+    };
   }
 
-  // 2. PROCRASTINATION, TIREDNESS, LOW MOTIVATION
-  if(/\b(tired|lazy|can't focus|cannot focus|distracted|bored|no motivation|procrastinating|struggling|hard to start|don't want to work)\b/i.test(lower)){
-    const responses = [
-      "I hear you. The hardest part is simply starting the first 5 minutes. Pick the easiest sliver of your task, put a timer on for 15 minutes, and let momentum take over. Want to try a short sprint?",
-      "Take a breath. Motivation usually follows action, not the other way around. Step away from your desk for 3 minutes, grab some water, and we'll tackle just one small chunk.",
-      "That's completely human. How about we drop the expectations and just do 10 minutes of light prep? No pressure to finish everything right now."
+  // 2. Logging Activity
+  const logMatch = t.match(/(?:studied|study|worked|work|read|gym|exercised|running|coding|coded|revise|revised|meeting)\s*(?:for)?\s*(\d+)?\s*(h|hr|hours?|m|mins?|minutes?)?/i);
+  if(logMatch && !t.includes('plan')){
+    let mins = 45;
+    const num = parseInt(logMatch[1], 10);
+    const unit = logMatch[2] || '';
+    if(num){
+      mins = unit.startsWith('h') ? num * 60 : num;
+    }
+    const cleanTitle = t.replace(/(i\s*)?(just\s*)?(logged|finished|did|completed)\s*/i, '')
+                        .replace(/for\s*\d+\s*(mins?|minutes?|hours?|hrs?)/i, '')
+                        .trim();
+    const capitalized = cleanTitle.charAt(0).toUpperCase() + cleanTitle.slice(1);
+    return {
+      speech: `Locked in. Added ${formatMinutes(mins)} of ${capitalized} to your focus log. Keep the momentum going.`,
+      action: { type: 'log', title: capitalized || 'Deep Focus Session', minutes: mins }
+    };
+  }
+
+  // 3. Plan my day
+  if(/(plan|schedule|organize|structure)\s*(my\s*)?day/i.test(t)){
+    return {
+      speech: "Let's build a focused day. Tell me your main priorities, or open the day planner to map it out.",
+      action: { type: 'open_plan' }
+    };
+  }
+
+  // 4. Greetings
+  if(/^(hi|hello|hey|yo|morning|good morning|sup|what's up)/i.test(t)){
+    const hours = new Date().getHours();
+    const greeting = hours < 12 ? "Good morning." : (hours < 18 ? "Good afternoon." : "Good evening.");
+    return {
+      speech: `${greeting} I'm here. We've got ${formatMinutes(state.focusMinutes)} logged so far. What are we tackling next?`
+    };
+  }
+
+  // 5. Procrastination / Mood
+  if(/(tired|lazy|don't want to|bored|cant focus|cannot focus|procrastinat|stuck|unmotivated)/i.test(t)){
+    const tips = [
+      "I hear you. The secret isn't feeling like it — it's starting for just five minutes. Pick the easiest piece and do that first.",
+      "Take a deep breath and drink some water. Lower the bar: commit to just 10 minutes. If you still want to stop after, you can.",
+      "Resistance is normal right before real progress. Set a 15-minute timer and just begin. You'll catch the groove."
     ];
-    return responses[Math.floor(Math.random() * responses.length)];
+    return { speech: tips[Math.floor(Math.random() * tips.length)] };
   }
 
-  // 3. ADVICE & WHAT TO DO NEXT
-  if(/\b(what should i do|what's next|where do i start|help me choose|give me advice|suggest)\b/i.test(lower)){
-    if(state.plans && state.plans.length > 0){
-      const nextTask = state.plans[0].title;
-      return `Looking at your schedule, your next priority is ${nextTask}. Give that your full attention for 45 minutes and we'll take a break right after.`;
-    }
-    return `You don't have a plan set yet today. Tell me your top 2 or 3 priorities, and I'll build an intentional, balanced schedule for you right now.`;
+  // 6. Identity
+  if(/(who are you|what are you|what can you do|help me)/i.test(t)){
+    return {
+      speech: "I am N — your focus and spending companion. Talk to me naturally to plan your day, log deep work, or track expenses on the fly."
+    };
   }
 
-  // 4. IDENTITY & CHATGPT COMPARISONS
-  if(/\b(who are you|what are you|what can you do|are you chatgpt|are you ai|your name)\b/i.test(lower)){
-    return "I'm N—your personal focus companion. Think of me as a thoughtful co-pilot for your time, spending, and habits. You can talk to me, plan your day, or log spending and focus on the fly.";
+  // 7. Spending status
+  if(/(how much (did i|have i) spent|spending status|budget left|money)/i.test(t)){
+    const remaining = Math.max(0, state.dailyBudget - state.spentToday);
+    return {
+      speech: `You've spent ₹${state.spentToday.toLocaleString('en-IN')} today. You have ₹${remaining.toLocaleString('en-IN')} left in your guide.`
+    };
   }
 
-  // 5. GRATITUDE & CASUAL BANTER
-  if(/\b(thanks|thank you|cool|awesome|great|you're great|appreciate|good job)\b/i.test(lower)){
-    const replies = [
-      "Anytime. I'm right here with you.",
-      "Glad I could help. Let's keep the momentum rolling.",
-      "Always. Protecting your focus is what I'm here for."
-    ];
-    return replies[Math.floor(Math.random() * replies.length)];
-  }
-
-  // 6. SPENDING ADVICE & REFLECTIONS
-  if(/\b(can i buy|should i spend|am i spending too much|budget|how much have i spent|money)\b/i.test(lower)){
-    if(state.spentToday > state.dailyBudget * 0.85){
-      return `You've spent ₹${state.spentToday} out of your ₹${state.dailyBudget} guide today. You're near the limit, so unless it's an absolute necessity, I'd suggest holding off until tomorrow.`;
-    }
-    if(state.wantsToday > 400){
-      return `You've spent ₹${state.spentToday} today, with ₹${remainingBudget} left in your guide. You've logged ₹${state.wantsToday} in wants, so treat yourself only if it truly feels worthwhile.`;
-    }
-    return `You're in good shape financially today: ₹${state.spentToday} logged, with ₹${remainingBudget} left in today's allowance. You've got room if you need it.`;
-  }
-
-  // 7. FOCUS REFLECTIONS
-  if(/\b(how am i doing|how's my focus|focus score|progress|how's my day)\b/i.test(lower)){
-    if(state.focusScore >= 75){
-      return `You're in a great groove today. ${focusStr} logged across ${state.activities.length} sessions, with a strong focus score of ${state.focusScore}. Keep guarding this flow.`;
-    }
-    return `You've logged ${focusStr} so far. One solid 45-minute focus session will push your score right into the top tier.`;
-  }
-
-  // 8. Thoughtful conversational fallbacks (never robotic)
-  const fallbacks = [
-    `I'm listening. Tell me what you're working on, what you want to fit into your day, or an expense to record.`,
-    `Got it. Whenever you want to structure your afternoon, log a focus session, or check your spending, just say the word.`,
-    `Understood. I'm right here to keep your day intentional—what's our next move?`
-  ];
-  return fallbacks[Math.floor(Math.random() * fallbacks.length)];
+  // Fallback natural answer
+  return {
+    speech: `Got it. You're at ${formatMinutes(state.focusMinutes)} of focus and ₹${state.spentToday.toLocaleString('en-IN')} spent today. What should we do next?`
+  };
 }
 
 /* =========================================================================
    6. VOICE & TEXT DIALOGUE ORCHESTRATOR
    ========================================================================= */
+let recognition = null;
+let isListening = false;
+let chatMessages = [];
 
 function openN(){
-  const isCloud = Boolean(state.aiKey);
-  const modeBadge = isCloud ? `⚡ Live ${state.aiProvider === 'gemini' ? 'Gemini' : 'ChatGPT'}` : `🧠 On-Device Brain`;
+  if(chatMessages.length === 0){
+    chatMessages = [
+      { sender: 'n', text: `Hey. I'm N. Your day rhythm is set from ${state.wakeTime} to ${state.sleepTime}. What's on your mind?` }
+    ];
+  }
 
   modal(`
-    <button class="close" onclick="closeModal()">×</button>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-      <div class="label">N · YOUR COMPANION</div>
-      <button onclick="openAiSettings()" style="background:#222;border:1px solid #444;color:#bbb;padding:4px 8px;border-radius:12px;font-size:9px;font-family:'Michroma',sans-serif;cursor:pointer">${modeBadge}</button>
-    </div>
-    <h2>Talk with N</h2>
-    <p>Speak naturally. Ask for advice, plan your day, or log time and spending.</p>
-
-    <!-- Visual AI Response Bubble -->
-    <div id="nResponseCard" class="ai-bubble" style="display:none">
-      <strong>N COMPANION</strong>
-      <div id="nResponseText"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div style="display:flex;align-items:center;gap:8px">
+        <img src="logo.png" alt="N" style="width:24px;height:24px;border-radius:6px;object-fit:cover;border:1px solid #333">
+        <div class="label" style="margin:0">N · CONVERSATIONAL COMPANION</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px">
+        <button class="chip" onclick="openAiSettings()" title="Configure AI Brain" style="padding:4px 8px;font-size:7px">⚡ AI Brain</button>
+        <button class="close" onclick="closeModal()" style="float:none;width:26px;height:26px">×</button>
+      </div>
     </div>
 
-    <div style="text-align:center;margin:12px 0 6px">
-      <button class="voicebutton" id="mic" onclick="listenN()">🎙</button>
-      <div id="voiceState" class="small" style="margin-top:8px">Tap the mic and speak</div>
-      <div id="voiceIndicator" class="voice-indicator"></div>
+    <!-- Chat history bubble area -->
+    <div id="dialogueArea" style="max-height:220px;min-height:110px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:8px 2px;margin-bottom:12px">
+      ${chatMessages.map(m => `
+        <div style="align-self:${m.sender === 'user' ? 'flex-end' : 'flex-start'};max-width:85%;background:${m.sender === 'user' ? '#fff' : '#1c1c1c'};color:${m.sender === 'user' ? '#000' : '#fff'};border:1px solid ${m.sender === 'user' ? '#fff' : '#2d2d2d'};padding:10px 14px;border-radius:${m.sender === 'user' ? '18px 18px 4px 18px' : '18px 18px 18px 4px'};font-size:12px;line-height:1.55">
+          ${escapeHtml(m.text)}
+        </div>
+      `).join('')}
     </div>
 
-    <textarea class="prompt" id="ntext" rows="2" placeholder="Talk to N or ask a question…"></textarea>
+    <!-- Live indicator -->
+    <div id="voiceWave" class="voice-indicator">Tap mic to speak or type below</div>
+
+    <!-- Voice button -->
+    <div style="text-align:center;margin:6px 0 14px">
+      <button class="voicebutton" id="micBtn" onclick="toggleVoiceAudio()">🎙</button>
+    </div>
+
+    <!-- Text input box -->
     <div style="display:flex;gap:8px">
-      <button class="button dark" style="flex:1;padding:14px" onclick="processN()">Send to N</button>
-      <button class="button ghost" style="width:50px;padding:14px" title="Toggle N Voice Audio" onclick="toggleVoiceAudio(this)">🔊</button>
+      <input class="input" id="voiceTextInput" placeholder="Ask N anything or speak..." style="margin:0;padding:12px;font-size:12px" onkeydown="if(event.key==='Enter')processN()">
+      <button class="button dark" style="padding:12px 18px;font-size:9px" onclick="processN()">SEND</button>
     </div>
   `);
-  speakN("I'm listening. What's on your mind?");
+
+  const area = $('#dialogueArea');
+  if(area) area.scrollTop = area.scrollHeight;
+  speakN(chatMessages[0].text);
 }
 
-function toggleVoiceAudio(btn){
-  voiceEnabled = !voiceEnabled;
-  btn.textContent = voiceEnabled ? '🔊' : '🔇';
-  toast(voiceEnabled ? 'N voice on' : 'N voice muted');
+function toggleVoiceAudio(){
+  if(isListening){
+    if(recognition) recognition.stop();
+    isListening = false;
+    $('#micBtn').classList.remove('listening');
+    $('#voiceWave').textContent = 'Microphone paused';
+  } else {
+    listenN();
+  }
 }
 
 function listenN(){
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const mic = $('#mic');
-  const stateEl = $('#voiceState');
-
-  if(!SR){
-    stateEl.textContent = 'Speech recognition: type below or use iPhone keyboard mic';
-    speakN("Please type or use your iPhone keyboard dictation.");
+  const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SpeechRec){
+    $('#voiceWave').textContent = 'Voice input not supported in this browser. Type below.';
     return;
   }
-
   try{
-    const rec = new SR();
-    rec.lang = 'en-IN';
-    rec.interimResults = false;
-    mic.classList.add('listening');
-    stateEl.textContent = 'Listening… speak naturally';
+    if(window.speechSynthesis) window.speechSynthesis.cancel();
+    recognition = new SpeechRec();
+    recognition.lang = 'en-IN';
+    recognition.interimResults = true;
+    recognition.continuous = false;
 
-    rec.onresult = e => {
-      const heard = e.results[0][0].transcript;
-      $('#ntext').value = heard;
-      stateEl.textContent = 'Thinking…';
-      mic.classList.remove('listening');
-      processN();
+    recognition.onstart = () => {
+      isListening = true;
+      if($('#micBtn')) $('#micBtn').classList.add('listening');
+      if($('#voiceWave')) $('#voiceWave').textContent = 'Listening... Speak naturally.';
     };
 
-    rec.onerror = e => {
-      mic.classList.remove('listening');
-      if(e.error === 'network'){
-        stateEl.textContent = 'Offline: Type request or use iPhone keyboard mic';
-        speakN("Network recognition unavailable. You can type or use your keyboard mic.");
-      } else {
-        stateEl.textContent = 'Could not catch that. Try again or type below.';
+    recognition.onresult = (e) => {
+      let interim = '';
+      let final = '';
+      for(let i = e.resultIndex; i < e.results.length; ++i){
+        if(e.results[i].isFinal) final += e.results[i][0].transcript;
+        else interim += e.results[i][0].transcript;
+      }
+      if($('#voiceTextInput')) $('#voiceTextInput').value = final || interim;
+      if($('#voiceWave')) $('#voiceWave').textContent = final || interim || 'Listening...';
+      if(final){
+        recognition.stop();
+        setTimeout(processN, 200);
       }
     };
 
-    rec.onend = () => mic.classList.remove('listening');
-    rec.start();
+    recognition.onerror = (e) => {
+      isListening = false;
+      if($('#micBtn')) $('#micBtn').classList.remove('listening');
+      if($('#voiceWave')) $('#voiceWave').textContent = 'Ready · Type or tap mic again';
+    };
+
+    recognition.onend = () => {
+      isListening = false;
+      if($('#micBtn')) $('#micBtn').classList.remove('listening');
+    };
+
+    recognition.start();
   }catch(err){
-    mic.classList.remove('listening');
-    stateEl.textContent = 'Ready. Type or use your keyboard microphone.';
+    isListening = false;
   }
 }
 
 async function processN(){
-  const inputEl = $('#ntext');
-  const t = (inputEl ? inputEl.value : '').trim();
-  if(!t){ toast('Say or type something to N'); return; }
+  const inputEl = $('#voiceTextInput');
+  if(!inputEl) return;
+  const raw = inputEl.value.trim();
+  if(!raw) return;
 
-  const stateEl = $('#voiceState');
-  if(stateEl) stateEl.textContent = 'N is thinking…';
+  chatMessages.push({ sender: 'user', text: raw });
+  inputEl.value = '';
 
-  // 1. Check if user explicitly asked for Activity Edit
-  if(/edit activity|change activity|edit my activity|update activity/i.test(t)){
-    closeModal();
-    if(state.activities.length > 0){
-      openEditActivity(0);
-      return;
-    } else {
-      toast('No activities to edit');
-      speakN('No activities logged yet to edit.');
-      return;
+  const area = $('#dialogueArea');
+  if(area){
+    area.innerHTML = chatMessages.map(m => `
+      <div style="align-self:${m.sender === 'user' ? 'flex-end' : 'flex-start'};max-width:85%;background:${m.sender === 'user' ? '#fff' : '#1c1c1c'};color:${m.sender === 'user' ? '#000' : '#fff'};border:1px solid ${m.sender === 'user' ? '#fff' : '#2d2d2d'};padding:10px 14px;border-radius:${m.sender === 'user' ? '18px 18px 4px 18px' : '18px 18px 18px 4px'};font-size:12px;line-height:1.55">
+        ${escapeHtml(m.text)}
+      </div>
+    `).join('');
+    area.scrollTop = area.scrollHeight;
+  }
+
+  if($('#voiceWave')) $('#voiceWave').textContent = 'N is thinking...';
+
+  let replyText = '';
+  let pendingAction = null;
+
+  if(state.aiKey){
+    const cloudAns = await callCloudLLM(raw);
+    if(cloudAns){
+      replyText = cloudAns;
+      const spendM = replyText.match(/\[SPEND:\s*(\d+)(?:,\s*([^\]]+))?\]/i);
+      if(spendM){
+        pendingAction = { type: 'spend', amount: parseInt(spendM[1], 10), category: (spendM[2] || 'Other').trim() };
+      }
+      const logM = replyText.match(/\[LOG:\s*([^,]+)(?:,\s*(\d+))?\]/i);
+      if(logM){
+        pendingAction = { type: 'log', title: logM[1].trim(), minutes: parseInt(logM[2], 10) || 45 };
+      }
     }
   }
 
-  // 2. Direct fast-path for Quick Spending (e.g. "spent 250 on lunch")
-  const amountMatch = t.match(/(?:₹|rs\.?\s*|rupees?\s*)([0-9,]+)|([0-9,]+)\s*(?:rupees?|rs\.?)/i) || t.match(/(?:spent|paid|bought|cost)\s*([0-9]+)/i);
-  if(amountMatch && !state.aiKey){
-    const n = parseInt((amountMatch[1] || amountMatch[2] || amountMatch[0].replace(/[^0-9]/g,'') || '0').replace(/,/g,''), 10);
-    if(n > 0){
-      const cats = ['food','groceries','transport','shopping','bills','health','entertainment','education','other'];
-      let cat = cats.find(c => t.toLowerCase().includes(c)) || 'food';
-      const isWant = /treat|snack|coffee|tea|bubble|shopping|entertainment|movie/i.test(t);
-      const iconMap = { food: '🥗', groceries: '🛒', transport: '🚕', shopping: '🛍️', bills: '🧾', health: '💊', entertainment: '🎬', education: '📚', other: '🪙' };
-      const icon = iconMap[cat] || '🪙';
+  if(!replyText){
+    const local = getLocalConversationalReply(raw);
+    replyText = local.speech;
+    pendingAction = local.action;
+  }
 
-      $('#sheet').innerHTML = `
-        <button class="close" onclick="closeModal()">×</button>
-        <div class="label">N · SPENDING ENTRY</div>
-        <h2>Got it. Logging ₹${n} for ${cat}.</h2>
-        <p>Review the details and confirm to add it to your log.</p>
-        <input class="input" id="namount" value="${n}" inputmode="decimal">
-        <select class="input" id="ncategory">
-          ${cats.map(c=>`<option ${c===cat?'selected':''}>${c[0].toUpperCase()+c.slice(1)}</option>`).join('')}
-        </select>
-        <button class="button dark" style="width:100%;padding:14px" onclick="confirmVoiceExpense('${icon}', ${isWant})">Confirm entry</button>
-      `;
-      speakN(`Got it. Logging ${n} rupees for ${cat}. Tap confirm when you're ready.`);
-      return;
+  const cleanReply = replyText.replace(/\[(SPEND|LOG|PLAN):.*?\]/g, '').trim();
+  chatMessages.push({ sender: 'n', text: cleanReply });
+
+  if(pendingAction){
+    if(pendingAction.type === 'spend'){
+      const cat = pendingAction.category || 'Other';
+      const iconMap = { Food: '🥗', Transport: '🚕', Shopping: '🛍️', Bills: '🧾', Health: '💊', Other: '🪙' };
+      state.spentToday += pendingAction.amount;
+      if(/(treat|cafe|coffee|snack|want)/i.test(cat)) state.wantsToday += pendingAction.amount;
+      state.purchases.unshift({
+        icon: iconMap[cat] || '🪙',
+        title: cat,
+        sub: 'Logged via voice',
+        amount: pendingAction.amount,
+        type: 'need'
+      });
+      saveState();
+    } else if(pendingAction.type === 'log'){
+      const mins = pendingAction.minutes || 45;
+      state.focusMinutes += mins;
+      state.activities.unshift({
+        icon: '📚',
+        title: pendingAction.title || 'Focus Session',
+        sub: `${new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})} · Deep focus`,
+        amount: formatMinutes(mins),
+        minutes: mins
+      });
+      state.logItems.unshift({
+        time: new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
+        title: '📚 ' + (pendingAction.title || 'Focus Session'),
+        sub: `${formatMinutes(mins)} · Deep focus`
+      });
+      state.focusScore = Math.min(100, Math.round((state.focusMinutes / 300) * 100));
+      saveState();
+    } else if(pendingAction.type === 'open_plan'){
+      setTimeout(() => { closeModal(); openAssistant(); }, 1200);
     }
   }
 
-  // 3. Direct fast-path for Day Planning (e.g. "Plan my day around...")
-  if(/plan my day|schedule my day|build my day|make a plan/i.test(t) && !state.aiKey){
-    closeModal();
-    openAssistant();
-    $('#wish').value = t;
-    makePlan();
-    return;
+  if(area){
+    area.innerHTML = chatMessages.map(m => `
+      <div style="align-self:${m.sender === 'user' ? 'flex-end' : 'flex-start'};max-width:85%;background:${m.sender === 'user' ? '#fff' : '#1c1c1c'};color:${m.sender === 'user' ? '#000' : '#fff'};border:1px solid ${m.sender === 'user' ? '#fff' : '#2d2d2d'};padding:10px 14px;border-radius:${m.sender === 'user' ? '18px 18px 4px 18px' : '18px 18px 18px 4px'};font-size:12px;line-height:1.55">
+        ${escapeHtml(m.text)}
+      </div>
+    `).join('');
+    area.scrollTop = area.scrollHeight;
   }
 
-  // 4. Generate Intelligent ChatGPT / LLM Response
-  let aiReply = '';
-  try {
-    if(state.aiKey && navigator.onLine){
-      aiReply = await callCloudLLM(t);
-    } else {
-      aiReply = getLocalConversationalReply(t);
-    }
-  } catch(err){
-    console.warn('Cloud LLM failed, using on-device conversational reply:', err);
-    aiReply = getLocalConversationalReply(t);
-  }
-
-  // Handle any embedded action tags from LLM
-  if(/\[SPEND:\s*([0-9]+),\s*([^,\]]+)(?:,\s*([^,\]]+))?(?:,\s*([^,\]]+))?\]/i.test(aiReply)){
-    const m = aiReply.match(/\[SPEND:\s*([0-9]+),\s*([^,\]]+)(?:,\s*([^,\]]+))?(?:,\s*([^,\]]+))?\]/i);
-    const amount = parseInt(m[1], 10);
-    const cat = m[2].trim().toLowerCase();
-    const isWant = m[4] ? m[4].trim() === 'true' : /treat|snack|coffee/i.test(cat);
-    const iconMap = { food: '🥗', groceries: '🛒', transport: '🚕', shopping: '🛍️', bills: '🧾', other: '🪙' };
-    state.spentToday += amount;
-    if(isWant) state.wantsToday += amount;
-    state.purchases.unshift({
-      icon: iconMap[cat] || '🪙',
-      title: cat.charAt(0).toUpperCase() + cat.slice(1),
-      sub: `${cat} · ${isWant ? 'Want' : 'Need'}`,
-      amount: amount,
-      type: isWant ? 'want' : 'need'
-    });
-    saveState();
-  }
-
-  if(/\[LOG:\s*([0-9]+),\s*([^,\]]+)(?:,\s*([^,\]]+))?\]/i.test(aiReply)){
-    const m = aiReply.match(/\[LOG:\s*([0-9]+),\s*([^,\]]+)(?:,\s*([^,\]]+))?\]/i);
-    const mins = parseInt(m[1], 10);
-    const taskName = m[2].trim();
-    state.focusMinutes += mins;
-    state.focusScore = Math.min(100, state.focusScore + 2);
-    state.activities.unshift({
-      icon: '⏱️',
-      title: taskName,
-      sub: 'Logged with N · Deep focus',
-      amount: formatMinutes(mins),
-      minutes: mins
-    });
-    saveState();
-  }
-
-  // Display the response in the AI bubble
-  const cleanReply = aiReply.replace(/\[(?:SPEND|LOG|PLAN):[^\]]+\]/gi, '').trim();
-  const card = $('#nResponseCard');
-  const text = $('#nResponseText');
-  if(card && text){
-    text.textContent = cleanReply;
-    card.style.display = 'block';
-  }
-
-  if(inputEl) inputEl.value = '';
-  if(stateEl) stateEl.textContent = 'Tap the mic to reply';
-
-  // Speak N's response naturally!
-  speakN(cleanReply);
-}
-
-function confirmVoiceExpense(icon, isWant){
-  const amount = parseInt($('#namount').value, 10) || 0;
-  const cat = $('#ncategory').value;
-  if(amount > 0){
-    state.spentToday += amount;
-    if(isWant) state.wantsToday += amount;
-    state.purchases.unshift({
-      icon: icon,
-      title: cat,
-      sub: `${cat} · ${isWant ? 'Want' : 'Need'}`,
-      amount: amount,
-      type: isWant ? 'want' : 'need'
-    });
-    saveState();
-    closeModal();
-    toast('Saved spending entry');
-    speakN(`All set. Logged ${amount} rupees for ${cat}. Total spent today is ₹${state.spentToday}.`);
-  }
+  if($('#voiceWave')) $('#voiceWave').textContent = 'N is speaking...';
+  speakN(cleanReply, () => {
+    if($('#voiceWave')) $('#voiceWave').textContent = 'Tap mic or type to continue';
+  });
 }
 
 /* =========================================================================
-   7. DAY PLANNING
+   7. FIRST-TIME ONBOARDING & DAY PLANNING
    ========================================================================= */
 
-function openAssistant(){
+function openDaySetupModal(isFirstTime = false){
+  const wakeVal = state.wakeTimeRaw || '08:00';
+  const sleepVal = state.sleepTimeRaw || '23:00';
+  const budgetVal = state.dailyBudget || 1000;
+
   modal(`
-    <button class="close" onclick="closeModal()">×</button>
-    <div class="label">✦ N · YOUR DAY ASSISTANT</div>
-    <h2>What matters today?</h2>
-    <p>Tell me what you want to get done, any fixed commitments, and when you’d like to finish. I’ll suggest a plan you can edit.</p>
-    <textarea class="prompt" id="wish" rows="3" placeholder="e.g. Revise biology, finish assignment, gym at 5, dinner at 8."></textarea>
-    <button class="button dark" style="width:100%;padding:14px" onclick="makePlan()">Build my day ✦</button>
-  `);
-  speakN("What would you like to fit into your day?");
+    ${!isFirstTime ? '<button class="close" onclick="closeModal()">×</button>' : ''}
+    <div style="text-align:center;margin-bottom:18px">
+      <div style="width:68px;height:68px;margin:0 auto 12px;border-radius:18px;overflow:hidden;border:1px solid #383838;box-shadow:0 0 24px rgba(255,255,255,0.08)">
+        <img src="logo.png" alt="N" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <div class="label" style="letter-spacing:.18em;color:#888;font-size:8px">✦ ${isFirstTime ? 'WELCOME TO N°' : 'CALIBRATE YOUR RHYTHM'}</div>
+      <h2 style="font-family:'Michroma',sans-serif;font-size:16px;font-weight:400;margin:6px 0 6px">Design Your Day</h2>
+      <p style="font-size:12px;color:#999;line-height:1.55;margin:0 auto;max-width:280px">
+        ${isFirstTime ? 'Start with a clean slate. Tell N your daily rhythm so your schedule, spending guide, and focus blocks are calibrated to you.' : 'Update your wake/sleep rhythm and daily targets anytime.'}
+      </p>
+    </div>
+
+    <!-- Step 1: Hours -->
+    <div style="background:#0a0a0a;border:1px solid #222;border-radius:18px;padding:15px;margin-bottom:12px">
+      <div class="label" style="font-size:8px;margin-bottom:10px;color:#aaa">1. YOUR DAILY RHYTHM</div>
+      <div style="display:flex;gap:12px">
+        <div style="flex:1">
+          <span style="font-size:11px;color:#888;display:block;margin-bottom:4px">Day Starts (Wake)</span>
+          <input type="time" class="input" id="setupWake" value="${wakeVal}" style="margin:0;padding:10px 8px;font-size:13px;text-align:center">
+        </div>
+        <div style="flex:1">
+          <span style="font-size:11px;color:#888;display:block;margin-bottom:4px">Day Ends (Sleep)</span>
+          <input type="time" class="input" id="setupSleep" value="${sleepVal}" style="margin:0;padding:10px 8px;font-size:13px;text-align:center">
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2: Budget -->
+    <div style="background:#0a0a0a;border:1px solid #222;border-radius:18px;padding:15px;margin-bottom:12px">
+      <div class="label" style="font-size:8px;margin-bottom:10px;color:#aaa">2. DAILY SPENDING GUIDE</div>
+      <div style="display:flex;gap:8px;margin-bottom:8px">
+        <button type="button" class="budget-pill ${budgetVal === 500 ? 'active' : ''}" onclick="selectSetupBudget(500, this)">₹500</button>
+        <button type="button" class="budget-pill ${budgetVal === 1000 ? 'active' : ''}" onclick="selectSetupBudget(1000, this)">₹1,000</button>
+        <button type="button" class="budget-pill ${budgetVal === 2000 ? 'active' : ''}" onclick="selectSetupBudget(2000, this)">₹2,000</button>
+      </div>
+      <input type="number" class="input" id="setupBudget" value="${budgetVal}" placeholder="Custom daily limit (₹)" style="margin:0;padding:10px 12px;font-size:13px">
+    </div>
+
+    <!-- Step 3: Goals -->
+    <div style="background:#0a0a0a;border:1px solid #222;border-radius:18px;padding:15px;margin-bottom:14px">
+      <div class="label" style="font-size:8px;margin-bottom:6px;color:#aaa">3. TODAY'S PRIORITIES & COMMITMENTS</div>
+      <p style="font-size:11px;color:#777;margin:0 0 8px">What matters today? Any classes, gym, projects, or meetings?</p>
+      <textarea class="prompt" id="setupGoals" rows="3" placeholder="e.g. Study 2h, Gym at 5 PM, Finish project, Dinner with friends at 8:30" style="margin:0;padding:12px;font-size:12px;line-height:1.5"></textarea>
+    </div>
+
+    <button class="button dark" style="width:100%;padding:16px;font-size:10px;letter-spacing:.08em" onclick="submitDaySetup()">START MY DAY WITH N ✦</button>
+
+    ${!isFirstTime ? `
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="button ghost" style="flex:1;padding:12px;font-size:8px" onclick="openAiSettings()">⚡ AI Brain</button>
+        <button class="button ghost" style="flex:1;padding:12px;font-size:8px;color:#ff6666;border-color:#ff4444" onclick="resetTodayData()">↺ Reset Today</button>
+      </div>
+    ` : ''}
+  `, isFirstTime);
+
+  if(isFirstTime){
+    speakN("Welcome to N. Tell me when your day starts and what you want to achieve.");
+  }
 }
 
-function parsePlanTasks(text){
+function selectSetupBudget(amt, btn){
+  document.querySelectorAll('.budget-pill').forEach(b => b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  const inp = $('#setupBudget');
+  if(inp) inp.value = amt;
+}
+
+function formatTimeDisplay(timeStr){
+  if(!timeStr) return '08:00 AM';
+  const parts = timeStr.split(':');
+  let h = parseInt(parts[0], 10);
+  const m = parts[1] || '00';
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12;
+  if(h === 0) h = 12;
+  return `${h}:${m} ${ampm}`;
+}
+
+function submitDaySetup(){
+  const wakeRaw = ($('#setupWake').value || '08:00').trim();
+  const sleepRaw = ($('#setupSleep').value || '23:00').trim();
+  const budget = parseInt($('#setupBudget').value, 10) || 1000;
+  const goals = ($('#setupGoals').value || '').trim();
+
+  state.wakeTimeRaw = wakeRaw;
+  state.wakeTime = formatTimeDisplay(wakeRaw);
+  state.sleepTimeRaw = sleepRaw;
+  state.sleepTime = formatTimeDisplay(sleepRaw);
+  state.dailyBudget = budget;
+  state.setupDone = true;
+
+  if(goals){
+    state.plans = parsePlanTasks(goals, wakeRaw, sleepRaw);
+  } else if(!state.plans || state.plans.length === 0){
+    state.plans = generateDefaultRhythmPlan(wakeRaw, sleepRaw);
+  }
+
+  saveState();
+  closeModal();
+  toast('Day calibrated with N');
+  speakN(`Your day is set up from ${state.wakeTime} to ${state.sleepTime}. Everything is ready and clean. Let's make today count.`);
+}
+
+function generateDefaultRhythmPlan(wakeRaw, sleepRaw){
+  const wakeH = parseInt(wakeRaw.split(':')[0], 10);
+  const wakeM = wakeRaw.split(':')[1] || '00';
+
+  const formatH = (h, m) => {
+    const ampm = h >= 12 && h < 24 ? 'PM' : 'AM';
+    let norm = h % 12;
+    if(norm === 0) norm = 12;
+    return `${norm}:${m} ${ampm}`;
+  };
+
+  return [
+    { icon: '🌅', title: `${formatH(wakeH, wakeM)} · Morning Routine & Awakening`, desc: 'Hydrate, move, and plan your highest leverage goal.' },
+    { icon: '🎯', title: `${formatH(wakeH + 1, '30')} · Deep Focus Window 1`, desc: 'Uninterrupted deep work while willpower is peak.' },
+    { icon: '🍽', title: `1:00 PM · Lunch & Reset Break`, desc: 'Step away from screens and refuel.' },
+    { icon: '💻', title: `3:00 PM · Afternoon Progress Block`, desc: 'Tasks, communications, and project follow-through.' },
+    { icon: '🏃', title: `6:00 PM · Movement & Decompression`, desc: 'Workout, walk, or physical activity.' },
+    { icon: '🌙', title: `${formatH(parseInt(sleepRaw.split(':')[0], 10) - 1, '00')} · Evening Reflection & Rest`, desc: 'Review today, celebrate wins, and prepare for rest.' }
+  ];
+}
+
+function parsePlanTasks(text, wakeRaw = '08:00', sleepRaw = '23:00'){
   const rawParts = text.replace(/plan my day (around|with)?/i, '')
                        .replace(/i want to /gi, '')
                        .split(/,|\bthen\b|\band\b|\n|;/i)
@@ -981,13 +1154,13 @@ function parsePlanTasks(text){
     break: '☕', rest: '☕', coffee: '☕', tea: '🧋'
   };
 
-  const planRows = [];
-  let currentHour = 9;
-  let currentMin = 0;
-
   if(rawParts.length === 0){
-    return DEFAULT_STATE.plans;
+    return generateDefaultRhythmPlan(wakeRaw, sleepRaw);
   }
+
+  const planRows = [];
+  let currentHour = parseInt(wakeRaw.split(':')[0], 10) + 1;
+  let currentMin = 0;
 
   rawParts.forEach((part, index) => {
     let chosenIcon = '🎯';
@@ -997,7 +1170,7 @@ function parsePlanTasks(text){
         break;
       }
     }
-    const timeFormatted = `${currentHour > 12 ? currentHour - 12 : currentHour}:${currentMin === 0 ? '00' : currentMin} ${currentHour >= 12 ? 'PM' : 'AM'}`;
+    const timeFormatted = `${currentHour > 12 ? currentHour - 12 : (currentHour === 0 ? 12 : currentHour)}:${currentMin === 0 ? '00' : String(currentMin).padStart(2,'0')} ${currentHour >= 12 && currentHour < 24 ? 'PM' : 'AM'}`;
     const capitalized = part.charAt(0).toUpperCase() + part.slice(1);
 
     planRows.push({
@@ -1016,23 +1189,52 @@ function parsePlanTasks(text){
   return planRows;
 }
 
+function resetTodayData(){
+  if(confirm("Reset today's recorded activities and spending to a clean slate?")){
+    state.activities = [];
+    state.purchases = [];
+    state.logItems = [];
+    state.spentToday = 0;
+    state.wantsToday = 0;
+    state.focusMinutes = 0;
+    state.focusScore = 100;
+    state.planMatch = 100;
+    saveState();
+    closeModal();
+    toast('Day reset to clean slate');
+    speakN("Clean slate. Your day is completely fresh and ready.");
+  }
+}
+
+function openAssistant(){
+  modal(`
+    <button class="close" onclick="closeModal()">×</button>
+    <div class="label">✦ N · YOUR DAY PLANNER</div>
+    <h2>What matters today?</h2>
+    <p>Tell me what you want to achieve, any fixed commitments, and when you’d like to finish. I’ll shape a plan you can edit.</p>
+    <textarea class="prompt" id="wish" rows="3" placeholder="e.g. Study biology 2h, Gym at 5 PM, Finish assignment, Dinner at 8"></textarea>
+    <button class="button dark" style="width:100%;padding:14px" onclick="makePlan()">Build my day ✦</button>
+  `);
+  speakN("What would you like to fit into your day?");
+}
+
 let pendingPlan = null;
 function makePlan(){
   const val = $('#wish').value.trim();
   if(!val){ toast('Add a goal or commitment first'); return; }
   
-  pendingPlan = parsePlanTasks(val);
+  pendingPlan = parsePlanTasks(val, state.wakeTimeRaw || '08:00', state.sleepTimeRaw || '23:00');
 
   $('#sheet').innerHTML = `
     <button class="close" onclick="closeModal()">×</button>
     <div class="label">YOUR FLEXIBLE PLAN</div>
     <h2>A day with room to breathe.</h2>
-    <p>Based on what you shared, here is your customized plan.</p>
+    <p>Based on your goals and rhythm, here is your customized plan.</p>
     <div style="max-height: 250px; overflow-y: auto; margin: 10px 0;">
       ${pendingPlan.map(p => `
         <div class="planrow">
           <div class="icon">${p.icon}</div>
-          <div><b>${p.title}</b>${p.desc}</div>
+          <div><b>${escapeHtml(p.title)}</b>${escapeHtml(p.desc)}</div>
         </div>
       `).join('')}
     </div>
@@ -1053,8 +1255,7 @@ function activatePlan(){
         sub: 'Planned with N'
       });
     });
-    state.planMatch = 85;
-    state.focusScore = Math.min(100, state.focusScore + 5);
+    state.planMatch = 100;
     saveState();
   }
   closeModal();
@@ -1070,54 +1271,54 @@ function activatePlan(){
 function openLog(){
   modal(`
     <button class="close" onclick="closeModal()">×</button>
-    <div class="label">TIME LOG</div>
-    <h2>What are you doing?</h2>
-    <input class="input" id="actName" placeholder="Activity or task (e.g. Biology revision)">
-    <select class="input" id="actCategory">
-      <option>Study</option><option>Work</option><option>Meeting</option><option>Break</option><option>Personal</option>
-    </select>
-    <div class="row">
-      <input class="input" id="actStart" style="width:48%" placeholder="Start time (e.g. 2:00 PM)">
-      <input class="input" id="actDuration" style="width:48%" placeholder="Duration (e.g. 1h 30m)">
-    </div>
+    <div class="label">RECORD ACTIVITY</div>
+    <h2>What did you focus on?</h2>
+    <input class="input" id="actName" placeholder="Activity name (e.g. Study, Gym, Work)">
+    <input class="input" id="actDuration" placeholder="Duration (e.g. 45m or 1h 30m)">
+    <input class="input" id="actDetails" placeholder="Context (e.g. Deep focus, Chapter 4)">
     <button class="button dark" style="width:100%;padding:14px" onclick="saveManualLog()">Save activity</button>
   `);
 }
 
 function saveManualLog(){
   const name = ($('#actName').value || 'Focus session').trim();
-  const dur = ($('#actDuration').value || '1h').trim();
-  const time = ($('#actStart').value || 'Now').trim();
-  const cat = $('#actCategory').value;
+  const durStr = ($('#actDuration').value || '30m').trim();
+  const details = ($('#actDetails').value || 'Deep focus').trim();
 
-  const mins = parseMinsFromStr(dur);
-  const iconMap = { Study: '📚', Work: '💻', Meeting: '📌', Break: '☕', Personal: '📱' };
-  const icon = iconMap[cat] || '⏱️';
-
+  const mins = parseMinsFromStr(durStr);
   state.focusMinutes += mins;
-  state.focusScore = Math.min(100, state.focusScore + 3);
+
+  let icon = '🎯';
+  if(/(study|bio|math|exam|read|book)/i.test(name)) icon = '📚';
+  else if(/(gym|run|workout|exercise|walk)/i.test(name)) icon = '🏋️';
+  else if(/(work|code|project|assignment)/i.test(name)) icon = '💻';
+  else if(/(break|coffee|rest|walk)/i.test(name)) icon = '☕';
+
   state.activities.unshift({
     icon: icon,
-    title: `${cat} · ${name}`,
-    sub: `${time} · Deep focus`,
+    title: name,
+    sub: `${new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})} · ${details}`,
     amount: formatMinutes(mins),
     minutes: mins
   });
+
   state.logItems.unshift({
-    time: time,
-    title: `${icon} ${cat} · ${name}`,
-    sub: `${formatMinutes(mins)} · Deep focus`
+    time: new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
+    title: `${icon} ${name}`,
+    sub: `${formatMinutes(mins)} · ${details}`
   });
+
+  state.focusScore = Math.min(100, Math.round((state.focusMinutes / 300) * 100));
   saveState();
   closeModal();
-  toast('Activity added to your time log');
-  speakN(`Logged ${formatMinutes(mins)} for ${name}.`);
+  toast('Activity recorded');
+  speakN(`Logged ${formatMinutes(mins)} of ${name}. Keep up the great focus.`);
 }
 
 function openExpense(){
   modal(`
     <button class="close" onclick="closeModal()">×</button>
-    <div class="label">SPENDING LOG</div>
+    <div class="label">RECORD SPENDING</div>
     <h2>Add a purchase</h2>
     <input class="input" id="expName" placeholder="What did you buy?">
     <input class="input" id="expAmount" placeholder="Amount (₹)" inputmode="decimal">
@@ -1155,9 +1356,15 @@ function saveManualExpense(){
   }
 }
 
-// Initialize on page load
+// 9. INITIALIZE ON LOAD
 loadState();
 renderApp();
+
+if(!state.setupDone){
+  setTimeout(() => {
+    openDaySetupModal(true);
+  }, 350);
+}
 
 // Service Worker for 0-network offline capability
 if('serviceWorker' in navigator){

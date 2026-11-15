@@ -1,8 +1,10 @@
-const CACHE_NAME = 'n-companion-v5';
+const CACHE_NAME = 'n-companion-v6';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
+  './logo.png',
+  './favicon.png',
   './icon-192.png',
   './icon-512.png',
   './apple-touch-icon.png'
